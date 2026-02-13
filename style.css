@@ -958,6 +958,19 @@ section {
   gap: 1.5rem;
 }
 
+.badge-in-progress {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
 .cert-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
