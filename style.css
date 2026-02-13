@@ -84,7 +84,12 @@ img {
 }
 
 /* ── Typography ── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-primary);
@@ -293,16 +298,21 @@ section {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   z-index: 0;
   animation: gridMove 20s linear infinite;
 }
 
 @keyframes gridMove {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(60px, 60px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(60px, 60px);
+  }
 }
 
 .hero .container {
@@ -355,7 +365,9 @@ section {
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-buttons {
@@ -426,9 +438,17 @@ section {
   border-radius: 50%;
 }
 
-.terminal-dot.red { background: #ef4444; }
-.terminal-dot.yellow { background: #eab308; }
-.terminal-dot.green { background: #22c55e; }
+.terminal-dot.red {
+  background: #ef4444;
+}
+
+.terminal-dot.yellow {
+  background: #eab308;
+}
+
+.terminal-dot.green {
+  background: #22c55e;
+}
 
 .terminal-title {
   font-family: var(--font-mono);
@@ -665,8 +685,15 @@ section {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .case-header {
@@ -1079,6 +1106,53 @@ section {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+.contact-group:hover {
+  border-color: var(--accent-cyan);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+}
+
+.contact-group .contact-link {
+  border: none;
+  background: transparent;
+  padding-right: 0.5rem;
+}
+
+.contact-group .contact-link:hover {
+  transform: none;
+}
+
+.contact-copy {
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border-card);
+  padding: 0 1rem;
+  height: 50%;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.contact-copy:hover {
+  color: var(--accent-cyan);
+}
+
+.contact-copy svg {
+  width: 18px;
+  height: 18px;
 }
 
 .contact-link {

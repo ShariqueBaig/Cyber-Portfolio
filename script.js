@@ -147,16 +147,22 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach(el => revealObserver.observe(el));
 
 
-// ── Smooth Scroll for Anchor Links ──
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
+// ── Copy Email to Clipboard ──
+const copyBtn = document.getElementById('copyEmail');
+const emailAddress = 'shariquebaig0@gmail.com';
+
+if (copyBtn) {
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(emailAddress).then(() => {
+      const originalIcon = copyBtn.innerHTML;
+      // Show checkmark icon
+      copyBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+      setTimeout(() => {
+        copyBtn.innerHTML = originalIcon;
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy email: ', err);
+    });
   });
-});
+}
