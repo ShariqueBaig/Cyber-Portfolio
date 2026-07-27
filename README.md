@@ -12,12 +12,11 @@ I'm a cybersecurity professional and CS student at IBA Karachi specializing in p
 
 ## 🎯 What's Inside
 
-- **Case Studies** — Sanitized real-world penetration test findings across e-commerce platforms, academic systems, and web applications
-- **Services** — Penetration testing, vulnerability assessment, security consulting, and secure development
+- **Case Studies** — Sanitized real-world penetration test findings (Agentic AI Pentesting, MedAssist AI, E-Commerce, etc.)
+- **Services** — Penetration testing, vulnerability assessment, security consulting, and secure web/app development
 - **Methodology** — My 6-phase structured approach to offensive security testing
-- **Skills & Tools** — Burp Suite, SQLMap, Nmap, OWASP ZAP, and more
-- **Certifications** — Google Cybersecurity Professional Certificate, Google Data Analytics
-- **Stories** — Bug bounty discovery and cybersecurity education outreach
+- **Skills & Tools** — Offensive Security, AI & Systems (LLMs, xv6), Governance (ISMS), Web Dev
+- **Certifications** — Google Cybersecurity Professional Certificate
 
 ## 🛠️ Tech Stack
 
