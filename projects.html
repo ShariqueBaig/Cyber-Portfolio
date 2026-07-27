@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharique Baig | Cybersecurity Consultant & Penetration Tester</title>
+  <meta name="description"
+    content="Sharique Baig — Cybersecurity Consultant & Penetration Tester. Securing digital assets through offensive security testing, vulnerability assessment, and security consulting.">
+  <meta name="keywords"
+    content="cybersecurity, penetration testing, vulnerability assessment, security consultant, ethical hacking">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (shield emoji) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+
+<body>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║           NAVIGATION                 ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">&lt;<span>SB</span>/&gt;</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="#casestudies">Case Studies</a></li>
+        <li><a href="index.html#methodology">Methodology</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║       CASE STUDIES SECTION           ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section id="casestudies">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Portfolio</span>
+        <h2>Case <span class="gradient-text">Studies</span></h2>
+        <p>Real-world security assessments and high-impact development projects.</p>
+      </div>
+
+      
+
+      <!-- Case Study 1: Enterprise Pentesting -->
+      <div class="case-panel active" id="case1">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>Securiti.ai — Enterprise Application Security</h3>
+            <p>Conducted authorized web and API penetration testing across multiple modules of enterprise SaaS platforms.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Enterprise SaaS</span>
+            <span class="case-meta-tag">Web/API Security</span>
+            <span class="case-meta-tag">OWASP & API Top 10</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">20+</div>
+            <div class="case-stat-label">Findings Total</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-critical)">Crit</div>
+            <div class="case-stat-label">Highest Severity</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-blue)">Auto</div>
+            <div class="case-stat-label">Workflow</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>Cross-Module Authorization Gaps</h4>
+              <p>Specialized in broken access control, uncovering IDOR/BOLA, function-level authorization (BFLA), and multi-tenant isolation flaws across enterprise modules, each backed by reproducible proof-of-concept.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>End-to-End Exploit Chains</h4>
+              <p>Tested for and demonstrated stored XSS, SSRF, XXE, CSRF, and insecure file-upload handling. Executed end-to-end exploit chains such as malicious-document delivery with fully working PoCs.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Workflow</span>
+            <div class="finding-text">
+              <h4>Automated Reporting & Playbooks</h4>
+              <p>Automated testing workflows by scripting Burp Suite exports into findings-tracker conversions. Authored a reusable file-upload testing playbook and professional CVSS-scored reports with remediation guidance.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2: MedAssist AI Platform -->
+      <div class="case-panel" id="case2">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>MedAssist AI — Telemedicine Platform</h3>
+            <p>Full-stack development of a secure PWA with real-time AI clinical assistance.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Node.js</span>
+            <span class="case-meta-tag">WebRTC</span>
+            <span class="case-meta-tag">Gemini 2.5</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">1</div>
+            <div class="case-stat-label">PWA Built</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-blue)">Live</div>
+            <div class="case-stat-label">AI Triage</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">µ</div>
+            <div class="case-stat-label">Microservices</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <div class="finding-text">
+              <h4>Real-Time AI Clinical Copilot</h4>
+              <p>Integrated Gemini 2.5 Flash-Lite for AI-driven symptom triage and built a live copilot that provides differential diagnosis hints during real-time consultations.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <div class="finding-text">
+              <h4>Secure WebRTC Video & Audio</h4>
+              <p>Engineered low-latency, secure video calling with Socket.io, including real-time speech-to-text transcription for automated doctor notes.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Architecture</span>
+            <div class="finding-text">
+              <h4>Dockerized Microservices</h4>
+              <p>Deployed the entire infrastructure using Docker containers, ensuring scalable production environments and offline-first mobile performance.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3: Luxury E-Commerce -->
+      <div class="case-panel" id="case3">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>The Watch Bazar</h3>
+            <p>Full-stack web application penetration test on a luxury product marketplace</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Black Box</span>
+            <span class="case-meta-tag">OWASP WSTG v4.2</span>
+            <span class="case-meta-tag">React + Supabase + Django</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">5</div>
+            <div class="case-stat-label">Findings Total</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-critical)">1</div>
+            <div class="case-stat-label">Critical</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-high)">2</div>
+            <div class="case-stat-label">High</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-medium)">2</div>
+            <div class="case-stat-label">Medium</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>Database Exposure via Misconfigured Row Level Security</h4>
+              <p>Extracted hardcoded API key from client-side JavaScript. Dumped full database schema (28 tables) and
+                exfiltrated product, store, and internal data directly via PostgREST API — bypassing the application
+                entirely. CVSS 9.1.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>Insecure Direct Object Reference (IDOR)</h4>
+              <p>Order tracking endpoint required no authentication. Sequential order numbers allowed enumeration of all
+                customer orders and sensitive delivery information.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>Role Escalation via Auth Sync</h4>
+              <p>Authentication synchronization endpoint accepted role parameters from client requests, enabling
+                potential escalation from customer to admin privileges.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium">Medium</span>
+            <div class="finding-text">
+              <h4>Exposed Admin Endpoints & API Documentation</h4>
+              <p>Django admin panel, Swagger docs, and API schema publicly accessible. robots.txt disclosed 12+
+                sensitive internal paths.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium">Medium</span>
+            <div class="finding-text">
+              <h4>Weak Content Security Policy</h4>
+              <p>CSP implemented via meta tag instead of HTTP header. Missing critical directives and unsafe-inline
+                allowing potential XSS exploitation.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 4: University Portal -->
+      <div class="case-panel" id="case4">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>Confidential Client — University Portal</h3>
+            <p>Gray box penetration test on a student management system handling sensitive academic data</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Gray Box</span>
+            <span class="case-meta-tag">Burp Suite Pro</span>
+            <span class="case-meta-tag">Supabase + Express + Netlify</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">11</div>
+            <div class="case-stat-label">Findings Total</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-critical)">5</div>
+            <div class="case-stat-label">Critical</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-high)">2</div>
+            <div class="case-stat-label">High</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-low)">4</div>
+            <div class="case-stat-label">Low / Info</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>SQL Injection — Authentication Bypass</h4>
+              <p>Login endpoint directly concatenated user input into SQL query. Confirmed via syntax error triggering
+                and comment injection. Enables full authentication bypass and database extraction.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>2FA Bypass — Client-Side Email Manipulation</h4>
+              <p>Two-factor authentication OTP sent to email address from client request body instead of server session.
+                Attacker can redirect OTP to their own email for full account takeover.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>2FA Completely Non-Functional</h4>
+              <p>Session upgraded to "fully authenticated" immediately after first-factor login. Any arbitrary code
+                accepted. Direct URL navigation bypasses 2FA entirely — zero security value.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>Account Takeover via Password Reset</h4>
+              <p>Password reset OTP can be redirected to attacker-controlled email by modifying the request body. Total
+                account takeover of any user.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>Inconsistent SSL/TLS Enforcement</h4>
+              <p>Password reset functionality downgrades to plaintext HTTP. Credentials transmitted in cleartext,
+                enabling network-based interception.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>Privilege Escalation via Parameter Pollution</h4>
+              <p>Appending <code>?role=admin</code> to API requests returns admin-level data. URL params override
+                session data, exposing administrative functionality to low-privilege users.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>Unchanged Passwords Post-Compromise</h4>
+              <p>After a previous security incident, all user passwords remained unchanged for 3+ months. Any stolen
+                credentials from the prior attack remain valid.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 5: Bug Bounty -->
+      <div class="case-panel" id="case5">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>First Bug Bounty — SVG File Upload Manipulation</h3>
+            <p>Independent security research on an AI note-taking platform</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Bug Bounty</span>
+            <span class="case-meta-tag">File Upload</span>
+            <span class="case-meta-tag">XSS via SVG</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">1</div>
+            <div class="case-stat-label">Vulnerability Found</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-medium)">Med</div>
+            <div class="case-stat-label">Severity</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-emerald)">✓</div>
+            <div class="case-stat-label">Fixed by Vendor</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-medium">Medium</span>
+            <div class="finding-text">
+              <h4>Unsanitized SVG File Upload in Avatar Feature</h4>
+              <p>Discovered that the platform's avatar upload accepted SVG files without sanitizing their contents. SVG
+                files can embed JavaScript and HTML — enabling potential Stored XSS. While the impact was limited in
+                this case (avatars weren't publicly displayed to other users), the lack of server-side validation
+                represented a significant security gap. The vulnerability was subsequently patched by the vendor.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 6: NCERT -->
+      <div class="case-panel" id="case6">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>NCERT — National CERT Pakistan</h3>
+            <p>GRC Analyst engagement focusing on Information Security Management Systems (ISMS) and national policy alignment.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">GRC</span>
+            <span class="case-meta-tag">ISMS Review</span>
+            <span class="case-meta-tag">PISF Framework</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">National</div>
+            <div class="case-stat-label">Impact Scale</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-emerald)">100%</div>
+            <div class="case-stat-label">Compliance Alignment</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-blue)">ISMS</div>
+            <div class="case-stat-label">Core Focus</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-high" style="background: var(--accent-blue-dim); color: var(--accent-blue); border-color: rgba(59,130,246,0.25);">Policy</span>
+            <div class="finding-text">
+              <h4>National Policy Alignment via PISF</h4>
+              <p>Aligned national cybersecurity policies with enterprise risk standards by utilizing the Pakistan Information Security Framework (PISF), ensuring robust regulatory compliance across critical infrastructure.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium" style="background: var(--accent-blue-dim); color: var(--accent-blue); border-color: rgba(59,130,246,0.25);">Audit</span>
+            <div class="finding-text">
+              <h4>Comprehensive ISMS Reviews</h4>
+              <p>Drove Governance, Risk, and Compliance (GRC) initiatives by conducting thorough reviews of Information Security Management Systems, identifying procedural gaps and recommending actionable improvements.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 7: Agentic AI Pentester -->
+      <div class="case-panel" id="case7">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>Agentic AI Penetration-Testing Framework</h3>
+            <p>Architected an autonomous hierarchical multi-agent system (Claude/LLMs) that maps attack surfaces and executes OWASP-based test matrices.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">LLM Agents</span>
+            <span class="case-meta-tag">Autonomous SecOps</span>
+            <span class="case-meta-tag">AI Safety</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">AI</div>
+            <div class="case-stat-label">System Type</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: rgba(168, 85, 247, 1);">100%</div>
+            <div class="case-stat-label">Methodology Fit</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-emerald)">HITL</div>
+            <div class="case-stat-label">Guardrails</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge" style="background: rgba(168, 85, 247, 0.1); color: rgb(168, 85, 247); border-color: rgba(168, 85, 247, 0.25);">Architecture</span>
+            <div class="finding-text">
+              <h4>Hierarchical Multi-Agent Orchestration</h4>
+              <p>Designed an orchestrator that routes tasks to specialized sub-agents to perform cross-module attack-chain reasoning. This surfaced complex authorization flaws that single-scope automated scanning tools consistently missed.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge" style="background: rgba(168, 85, 247, 0.1); color: rgb(168, 85, 247); border-color: rgba(168, 85, 247, 0.25);">Memory</span>
+            <div class="finding-text">
+              <h4>Self-Improving Knowledge Base</h4>
+              <p>Engineered a persistent memory module featuring per-endpoint and data-model changelogs, ensuring the AI agents accumulate context and systematically improve attack coverage across sequential runs.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Safety</span>
+            <div class="finding-text">
+              <h4>Strict Autonomous Guardrails</h4>
+              <p>Built comprehensive safety controls into the pipeline, including tiered permission levels, mandatory Human-in-the-Loop (HITL) approvals for destructive actions, and automated pre-execution verification hooks.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Case Study 8: SSRF Automation Tooling -->
+      <div class="case-panel" id="case8">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>Custom SSRF Payload Engine</h3>
+            <p>Built an automated Python security tooling suite dedicated to rigorous Server-Side Request Forgery (SSRF) regression testing.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Python Scripting</span>
+            <span class="case-meta-tag">Network Security</span>
+            <span class="case-meta-tag">Custom Tooling</span>
+          </div>
+                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">70+</div>
+            <div class="case-stat-label">Bypass Vectors</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-high)">12</div>
+            <div class="case-stat-label">Evasion Classes</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-emerald)">Live</div>
+            <div class="case-stat-label">Dashboard</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Tooling</span>
+            <div class="finding-text">
+              <h4>Comprehensive Evasion Capability</h4>
+              <p>Engineered a dynamic payload generation engine capable of 70+ specific bypass techniques across 12 distinct evasion classes, including DNS rebinding, cloud-metadata exfiltration, and protocol confusion attacks.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Workflow</span>
+            <div class="finding-text">
+              <h4>Live Results & Tracking Dashboard</h4>
+              <p>Coupled the payload engine with a live results dashboard for immediate feedback during network exposure tests, significantly streamlining the security assessment process and minimizing false positives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║         CONTACT SECTION              ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-content reveal">
+        <span class="section-label">Let's Talk</span>
+        <h2>Let's Secure Your <span class="gradient-text">Business</span></h2>
+        <p>Have a project that needs a security assessment? Let's discuss how I can help protect your digital assets.
+        </p>
+
+        <div class="contact-links">
+          <div class="contact-group">
+            <a href="mailto:shariquebaig0@gmail.com" class="contact-link" id="emailLink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email Me
+            </a>
+            <button class="contact-copy" id="copyEmail" title="Copy email to clipboard">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+          <a href="https://linkedin.com/in/shariquebaig" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ShariqueBaig" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║             FOOTER                   ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-text">© 2026 Sharique Baig. All rights reserved.</span>
+      <span class="footer-tag">&lt;<span>secured</span> by=&quot;design&quot; /&gt;</span>
+      </div>
+      </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

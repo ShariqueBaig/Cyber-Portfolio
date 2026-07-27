@@ -648,6 +648,12 @@ section {
   margin-bottom: 2rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.case-studies-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .case-tab {
@@ -676,12 +682,57 @@ section {
 }
 
 .case-panel {
-  display: none;
-  animation: fadeIn 0.4s ease;
+  display: block;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  overflow: hidden;
+  transition: border-color var(--transition);
 }
 
 .case-panel.active {
+  border-color: var(--border-card-hover);
+}
+
+.case-header.accordion-toggle {
+  cursor: pointer;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  transition: background var(--transition);
+  background: var(--bg-card);
+  border-bottom: 1px solid transparent;
+}
+
+.case-header.accordion-toggle:hover {
+  background: var(--bg-card-hover);
+}
+
+.case-panel.active .case-header.accordion-toggle {
+  border-bottom-color: var(--border-card);
+}
+
+.accordion-icon {
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+}
+
+.case-panel.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.case-content {
+  display: none;
+  padding: 1.5rem;
+  padding-top: 2rem;
+}
+
+.case-panel.active .case-content {
   display: block;
+  animation: fadeIn 0.4s ease;
 }
 
 @keyframes fadeIn {

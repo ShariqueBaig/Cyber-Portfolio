@@ -103,27 +103,38 @@ function setActiveLink() {
 window.addEventListener('scroll', setActiveLink, { passive: true });
 
 
-// ── Case Study Tabs ──
-const caseTabs = document.querySelectorAll('.case-tab');
+// ── Case Study Accordion ──
+const accordionToggles = document.querySelectorAll('.accordion-toggle');
 const casePanels = document.querySelectorAll('.case-panel');
 
-caseTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.tab;
-
-    // Update active tab
-    caseTabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-
-    // Update active panel
-    casePanels.forEach(panel => {
-      panel.classList.remove('active');
-      if (panel.id === target) {
-        panel.classList.add('active');
-      }
-    });
+accordionToggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const panel = toggle.closest('.case-panel');
+    const isActive = panel.classList.contains('active');
+    
+    // Close all other panels (optional accordion behavior)
+    casePanels.forEach(p => p.classList.remove('active'));
+    
+    // Toggle current
+    if (!isActive) {
+      panel.classList.add('active');
+    }
   });
 });
+
+// Auto-open accordion from URL query param on load
+const urlParams = new URLSearchParams(window.location.search);
+const tabParam = urlParams.get('tab');
+if (tabParam) {
+  const targetPanel = document.getElementById(tabParam);
+  if (targetPanel) {
+    casePanels.forEach(p => p.classList.remove('active'));
+    targetPanel.classList.add('active');
+    setTimeout(() => {
+      targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+}
 
 
 // ── Scroll Reveal Animation ──
