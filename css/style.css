@@ -1363,3 +1363,78 @@ section {
     align-items: center;
   }
 }
+
+/* ══════════════════════════════════════ */
+/*         EXPERIENCE SECTION             */
+/* ══════════════════════════════════════ */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: var(--surface-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-blue);
+}
+
+.exp-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.exp-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.exp-company {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent-blue);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.exp-highlights {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-highlights li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.exp-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+
+.exp-highlights li:last-child {
+  margin-bottom: 0;
+}

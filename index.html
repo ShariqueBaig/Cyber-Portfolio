@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon (shield emoji) -->
   <link rel="icon"
@@ -37,6 +37,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#casestudies">Case Studies</a></li>
         <li><a href="#methodology">Methodology</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -63,8 +64,8 @@
       <div class="hero-content">
         <p class="hero-subtitle">Hi, I'm Sharique Baig</p>
         <h1>
-          Penetration Tester &
-          <span class="highlight">Security Consultant</span>
+          Cybersecurity Specialist &
+          <span class="highlight">Full-Stack Developer</span>
         </h1>
         <p class="hero-tagline">
           <span id="typed-text"></span><span class="cursor"></span>
@@ -151,20 +152,20 @@
 
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-number">3+</div>
-          <div class="stat-label">Client Engagements</div>
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Enterprise Projects</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">16+</div>
-          <div class="stat-label">Vulnerabilities Found</div>
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Vulnerabilities Remediated</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">1</div>
-          <div class="stat-label">Bug Bounty</div>
+          <div class="stat-label">Proprietary AI Sec-Tool</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">5</div>
-          <div class="stat-label">Day Workshop Led</div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Delivery Rate</div>
         </div>
       </div>
     </div>
@@ -223,15 +224,62 @@
 
         <div class="service-card reveal">
           <div class="service-icon">💻</div>
-          <h3>Secure Development</h3>
-          <p>Building applications with security baked in from day one — secure coding practices, DevSecOps, and
-            container hardening.</p>
+          <h3>Secure Web & App Development</h3>
+          <p>Building scalable, full-stack applications with security baked in from day one. Expertise in React, Next.js, Node.js, and Docker.</p>
           <div class="service-tags">
-            <span class="service-tag">Secure Code</span>
-            <span class="service-tag">Docker Security</span>
-            <span class="service-tag">RBAC</span>
-            <span class="service-tag">JWT/Auth</span>
+            <span class="service-tag">Next.js / React</span>
+            <span class="service-tag">Node.js</span>
+            <span class="service-tag">Docker</span>
+            <span class="service-tag">Secure by Design</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗ -->
+  <!-- ║        EXPERIENCE SECTION            ║ -->
+  <!-- ╚══════════════════════════════════════╝ -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Career</span>
+        <h2>Industry <span class="gradient-text">Experience</span></h2>
+        <p>Key professional roles delivering enterprise security and governance solutions.</p>
+      </div>
+
+      <div class="experience-list">
+        <div class="experience-item reveal">
+          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
+            <img src="assets/securiti_logo.png" alt="Securiti.ai Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; background: white; padding: 6px;">
+            <div>
+              <h3 style="margin-bottom: 0.25rem;">Application Security Specialist</h3>
+              <div class="exp-company">Securiti.ai (A Veeam Company)</div>
+              <div class="exp-date">Jun 2026 — Present</div>
+            </div>
+          </div>
+          <ul class="exp-highlights">
+            <li>Executed web/API pentesting on enterprise SaaS platforms, identifying 20+ vulnerabilities (up to Critical) per OWASP standards.</li>
+            <li>Exploited access control flaws (IDOR/BOLA) and chained exploits for XSS, SSRF, and CSRF with reproducible PoCs.</li>
+            <li>Developed Python tooling for SSRF evasion and automated Burp Suite workflows for streamlined regression testing.</li>
+            <li><strong>Key Project: Agentic AI Pentesting Framework</strong> — Architected a hierarchical LLM multi-agent system to autonomously map attack surfaces, execute pentests, and surface complex authorization flaws with strict human-in-the-loop guardrails.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item reveal">
+          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
+            <img src="assets/ncert_logo.png" alt="NCERT Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px;">
+            <div>
+              <h3 style="margin-bottom: 0.25rem;">GRC Analyst</h3>
+              <div class="exp-company">NCERT (National CERT Pakistan)</div>
+              <div class="exp-date">Jul 2026 — Present</div>
+            </div>
+          </div>
+          <ul class="exp-highlights">
+            <li>Drove GRC initiatives by conducting comprehensive reviews of Information Security Management Systems (ISMS).</li>
+            <li>Aligned national cybersecurity policies with enterprise risk standards utilizing the PISF framework.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -246,19 +294,128 @@
       <div class="reveal">
         <span class="section-label">Portfolio</span>
         <h2>Case <span class="gradient-text">Studies</span></h2>
-        <p>Real-world security assessments with sanitized details to protect client confidentiality.</p>
+        <p>Real-world security assessments and high-impact development projects.</p>
       </div>
 
       <!-- Tabs -->
       <div class="case-studies-tabs reveal">
-        <button class="case-tab active" data-tab="case1">E-Commerce Platform</button>
-        <button class="case-tab" data-tab="case2">University Portal</button>
-        <button class="case-tab" data-tab="case3">Secure E-Commerce Dev</button>
-        <button class="case-tab" data-tab="case4">Bug Bounty</button>
+        <button class="case-tab active" data-tab="case1">Enterprise AI Pentesting</button>
+        <button class="case-tab" data-tab="case2">MedAssist AI</button>
+        <button class="case-tab" data-tab="case3">E-Commerce Security</button>
+        <button class="case-tab" data-tab="case4">University Portal</button>
+        <button class="case-tab" data-tab="case5">First Bug Bounty</button>
       </div>
 
-      <!-- Case Study 1: Luxury E-Commerce -->
+      <!-- Case Study 1: Enterprise AI Pentesting -->
       <div class="case-panel active" id="case1">
+        <div class="case-header">
+          <div>
+            <h3>Enterprise SaaS & Agentic AI Pentesting</h3>
+            <p>Comprehensive web/API security assessment and the development of an autonomous AI testing framework.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Enterprise</span>
+            <span class="case-meta-tag">LLM Agents</span>
+            <span class="case-meta-tag">Python & APIs</span>
+          </div>
+        </div>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">20+</div>
+            <div class="case-stat-label">Findings Total</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--severity-critical)">Crit</div>
+            <div class="case-stat-label">Highest Severity</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-blue)">1</div>
+            <div class="case-stat-label">AI Framework</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-critical">Critical</span>
+            <div class="finding-text">
+              <h4>Cross-Module Authorization Gaps</h4>
+              <p>Specialized in broken access control, uncovering IDOR/BOLA, function-level authorization (BFLA), and multi-tenant isolation flaws across enterprise modules.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>Agentic AI Pentesting Framework</h4>
+              <p>Designed and built an autonomous system using Claude/LLM agents to map application attack surfaces, execute an OWASP-based test matrix, and produce CVSS-scored vulnerability reports. Implemented a self-improving knowledge base and strict human-in-the-loop guardrails.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium">Medium</span>
+            <div class="finding-text">
+              <h4>Custom SSRF Automation Tooling</h4>
+              <p>Built a Python payload engine covering 70+ bypass techniques across 12 evasion classes to rigorously test internal network exposure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 2: MedAssist AI Platform -->
+      <div class="case-panel" id="case2">
+        <div class="case-header">
+          <div>
+            <h3>MedAssist AI — Telemedicine Platform</h3>
+            <p>Full-stack development of a secure PWA with real-time AI clinical assistance.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Node.js</span>
+            <span class="case-meta-tag">WebRTC</span>
+            <span class="case-meta-tag">Gemini 2.5</span>
+          </div>
+        </div>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">1</div>
+            <div class="case-stat-label">PWA Built</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num" style="color: var(--accent-blue)">Live</div>
+            <div class="case-stat-label">AI Triage</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">µ</div>
+            <div class="case-stat-label">Microservices</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <div class="finding-text">
+              <h4>Real-Time AI Clinical Copilot</h4>
+              <p>Integrated Gemini 2.5 Flash-Lite for AI-driven symptom triage and built a live copilot that provides differential diagnosis hints during real-time consultations.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <div class="finding-text">
+              <h4>Secure WebRTC Video & Audio</h4>
+              <p>Engineered low-latency, secure video calling with Socket.io, including real-time speech-to-text transcription for automated doctor notes.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Architecture</span>
+            <div class="finding-text">
+              <h4>Dockerized Microservices</h4>
+              <p>Deployed the entire infrastructure using Docker containers, ensuring scalable production environments and offline-first mobile performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study 3: Luxury E-Commerce -->
+      <div class="case-panel" id="case3">
         <div class="case-header">
           <div>
             <h3>Luxury E-Commerce Marketplace</h3>
@@ -335,8 +492,8 @@
         </div>
       </div>
 
-      <!-- Case Study 2: University Portal -->
-      <div class="case-panel" id="case2">
+      <!-- Case Study 4: University Portal -->
+      <div class="case-panel" id="case4">
         <div class="case-header">
           <div>
             <h3>University Academic Portal</h3>
@@ -428,75 +585,11 @@
         </div>
       </div>
 
-      <!-- Case Study 3: Secure E-Commerce Dev -->
-      <div class="case-panel" id="case3">
+      <!-- Case Study 5: Bug Bounty -->
+      <div class="case-panel" id="case5">
         <div class="case-header">
           <div>
-            <h3>Industrial Supplier — Secure E-Commerce Development</h3>
-            <p>End-to-end secure web development and digital strategy for an industrial chemical business</p>
-          </div>
-          <div class="case-meta">
-            <span class="case-meta-tag">Development</span>
-            <span class="case-meta-tag">Next.js</span>
-            <span class="case-meta-tag">Security-First Architecture</span>
-          </div>
-        </div>
-
-        <div class="case-stats">
-          <div class="case-stat">
-            <div class="case-stat-num">1</div>
-            <div class="case-stat-label">Platform Built</div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num">∞</div>
-            <div class="case-stat-label">Auto-SSL</div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num">A+</div>
-            <div class="case-stat-label">Security Headers</div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num">100%</div>
-            <div class="case-stat-label">HTTPS Enforced</div>
-          </div>
-        </div>
-
-        <div class="findings-list">
-          <div class="finding-item">
-            <span class="severity-badge severity-low"
-              style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Delivered</span>
-            <div class="finding-text">
-              <h4>Security-First Architecture Design</h4>
-              <p>Designed the full e-commerce platform with HTTPS enforcement, auto-SSL via Vercel, secure
-                authentication, and input validation from day one.</p>
-            </div>
-          </div>
-          <div class="finding-item">
-            <span class="severity-badge severity-low"
-              style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Delivered</span>
-            <div class="finding-text">
-              <h4>Digital Strategy & Market Analysis</h4>
-              <p>Comprehensive competitor analysis, SEO strategy, and WhatsApp automation integration tailored for the
-                Pakistani market.</p>
-            </div>
-          </div>
-          <div class="finding-item">
-            <span class="severity-badge severity-low"
-              style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Delivered</span>
-            <div class="finding-text">
-              <h4>Maintenance & Operations Guide</h4>
-              <p>Post-launch documentation covering SSL management, DNS optimization, backup procedures, and ongoing
-                security monitoring.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case Study 4: Bug Bounty -->
-      <div class="case-panel" id="case4">
-        <div class="case-header">
-          <div>
-            <h3>Bug Bounty — SVG File Upload Manipulation</h3>
+            <h3>First Bug Bounty — SVG File Upload Manipulation</h3>
             <p>Independent security research on an AI note-taking platform</p>
           </div>
           <div class="case-meta">
@@ -536,7 +629,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- ╔══════════════════════════════════════╗ -->
   <!-- ║       METHODOLOGY SECTION            ║ -->
@@ -646,6 +738,17 @@
             <span class="skill-pill purple">CVSS v3.1</span>
             <span class="skill-pill purple">Zero Trust</span>
             <span class="skill-pill purple">MITRE ATT&CK</span>
+            <span class="skill-pill purple">Governance (ISMS/PISF)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🤖 AI & Systems</h3>
+          <div class="skill-pills">
+            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">LLMs / AI Agents</span>
+            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">Federated Learning</span>
+            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">QEMU / xv6</span>
+            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">Python Automation</span>
           </div>
         </div>
       </div>
@@ -686,86 +789,6 @@
           </ul>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-issuer">Google Career Certificates</div>
-          <h3>Google Data Analytics Professional Certificate</h3>
-          <div class="cert-date">2025 · Coursera</div>
-          <ul class="cert-highlights">
-            <li>Data analysis pipeline: Ask, Prepare, Process, Analyze, Share, Act</li>
-            <li>Visualization with Tableau and R</li>
-            <li>Data-driven decision making</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║         STORIES SECTION              ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="stories">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Beyond the Code</span>
-        <h2>Stories</h2>
-      </div>
-
-      <div class="stories-grid reveal">
-        <div class="story-card ctf">
-          <div class="story-emoji">🚩</div>
-          <h3>The Cloud Bill YoYo — CTF Approval</h3>
-          <div class="story-sub">National CERT-Pakistan · LMS Integration</div>
-          <p>
-            I'm pleased to share that my Capture The Flag (CTF) challenge "The Cloud Bill YoYo" has been officially approved by National CERT-Pakistan and added to their Learning Management System (LMS) for learning and skill development across Pakistan.
-          </p>
-          <p>
-            This challenge provides practical hands-on learning in ethical hacking and cyber defense, and this achievement motivates me to continue contributing to a stronger digital Pakistan.
-          </p>
-          <p>
-            <a href="https://csopakistan.com/national-cert-pakistan-approves-ctf-challenge-the-cloud-bill-yoyo-for-lms-integration/" target="_blank" rel="noopener" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">Read the full news coverage ↗</a>
-          </p>
-        </div>
-
-        <div class="story-card bounty">
-          <div class="story-emoji">🐛</div>
-          <h3>My First Bug Bounty</h3>
-          <div class="story-sub">SVG File Upload · NoteGPT</div>
-          <p>
-            While exploring NoteGPT — an AI-powered note-taking platform — I decided to test their file upload
-            functionality. When I tried uploading an SVG file as my avatar, I noticed something interesting: the
-            platform accepted it without any sanitization.
-          </p>
-          <p>
-            SVG files aren't just images — they can contain embedded JavaScript. This means a crafted SVG could execute
-            arbitrary code in users' browsers. While the impact was limited here since avatars weren't publicly visible
-            to other users, the lack of server-side validation was a real security gap.
-          </p>
-          <p>
-            The vulnerability was eventually fixed. It taught me that sometimes the most interesting vulnerabilities
-            hide in the most mundane features — like a profile picture upload.
-          </p>
-        </div>
-
-        <div class="story-card teaching">
-          <div class="story-emoji">🎓</div>
-          <h3>Bridging the Security Gap</h3>
-          <div class="story-sub">STEMX Winter School 2026</div>
-          <p>
-            At the STEMX Winter School, I designed and delivered a 5-day intensive cybersecurity curriculum for students
-            from grades 8 to 12. I taught them about real-world vulnerabilities — SQL Injection, Cross-Site Scripting,
-            CSRF — through hands-on labs where they could see attacks working in safe, controlled environments.
-          </p>
-          <p>
-            The most rewarding part? Watching them grow over those 5 days. Students who walked in knowing nothing about
-            security left with the skills to safeguard themselves online. That transformation — from curiosity to
-            capability — is why I believe security education should start early.
-          </p>
-          <blockquote>
-            "Hacking isn't about breaking rules — it's about thinking critically and understanding how systems work so
-            you can protect them."
-          </blockquote>
-        </div>
       </div>
     </div>
   </section>
@@ -836,7 +859,7 @@
 
 
   <!-- Script -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
