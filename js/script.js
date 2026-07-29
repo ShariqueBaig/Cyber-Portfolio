@@ -6,10 +6,10 @@
 // ── Typing Animation ──
 const typedText = document.getElementById('typed-text');
 const phrases = [
-  'Securing your digital assets through offensive security.',
-  'I find vulnerabilities before attackers do.',
-  'OWASP Top 10 · Pentesting · Security Consulting',
-  '16+ vulnerabilities discovered across 3+ engagements.'
+  'White-Label Penetration Testing for Dev Agencies.',
+  'Enterprise-Grade Secure MVPs for Startups.',
+  'Fractional DevSecOps & GRC Compliance.',
+  'I build and secure software to help you close enterprise deals.'
 ];
 let phraseIndex = 0;
 let charIndex = 0;
