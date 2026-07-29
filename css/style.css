@@ -613,7 +613,13 @@ section {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  color: var(--accent-cyan);
+}
+
+.service-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
 }
 
 .service-card h3 {
