@@ -3,73 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sharique Baig | Cybersecurity Consultant & Penetration Tester</title>
-  <meta name="description"
-    content="Sharique Baig, Cybersecurity Consultant & Penetration Tester. Securing digital assets through offensive security testing, vulnerability assessment, and security consulting.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Case files | Sharique Baig</title>
+  <meta name="description" content="Sanitized case files: penetration tests with real findings and severities, and secure software shipped live. By Sharique Baig.">
   <meta name="keywords"
-    content="cybersecurity, penetration testing, vulnerability assessment, security consultant, ethical hacking">
+    content="penetration testing, white-label pentest, application security, secure software development, DevSecOps, Supabase RLS, Next.js, GRC">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap"
     rel="stylesheet">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║           NAVIGATION                 ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <nav class="navbar" id="navbar">
+  <header class="site-header" id="navbar">
     <div class="container">
-      <a href="#" class="nav-logo">&lt;<span>SB</span>/&gt;</a>
+      <a href="index.html" class="brand"><b>Sharique Baig</b><span>Security testing + secure engineering</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#engagements">Engagements</a></li>
+        <li><a href="projects.html" class="active">Case files</a></li>
         <li><a href="index.html#experience">Experience</a></li>
-        <li><a href="#casestudies">Case Studies</a></li>
-        <li><a href="index.html#methodology">Methodology</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#toolbox">Tools</a></li>
+        <li><a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="nav-cta">Book a call</a></li>
       </ul>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </nav>
+  </header>
 
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║       CASE STUDIES SECTION           ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="casestudies">
+  <main id="main">
+  <section class="page-head">
     <div class="container">
-      <div class="reveal">
-        <span class="section-label">Portfolio</span>
-        <h2>Case <span class="gradient-text">Studies</span></h2>
-        <p>Real-world security assessments and high-impact development projects.</p>
+      <h1>Case files</h1>
+      <p>Penetration tests with the findings and severities as reported, and software shipped live, with the security decisions that went into it. Sanitized from real engagements; client names withheld.</p>
+      <div class="filters" role="group" aria-label="Filter case files">
+        <button class="filter" data-kind="all" aria-pressed="true">All 11</button>
+        <button class="filter" data-kind="test" aria-pressed="false">Security tests</button>
+        <button class="filter" data-kind="build" aria-pressed="false">Secure builds</button>
+        <button class="filter" data-kind="tool" aria-pressed="false">Tooling and GRC</button>
       </div>
+    </div>
+  </section>
 
-      
-
-      <!-- Case Study 1: Enterprise Pentesting -->
-      <div class="case-panel active" id="case1">
+  <section id="casestudies" aria-labelledby="cases-h">
+    <div class="container">
+      <h2 class="sr-only" id="cases-h">All case files</h2>
+      <div class="case-panel active" id="case1" data-kind="test">
         <div class="case-header accordion-toggle">
           <div>
             <h3>Securiti.ai: Enterprise Application Security</h3>
@@ -93,7 +85,7 @@
             <div class="case-stat-label">Highest Severity</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-blue)">Auto</div>
+            <div class="case-stat-num">Auto</div>
             <div class="case-stat-label">Workflow</div>
           </div>
         </div>
@@ -114,7 +106,7 @@
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Workflow</span>
+            <span class="severity-badge tag">Workflow</span>
             <div class="finding-text">
               <h4>Automated Reporting & Playbooks</h4>
               <p>Automated testing workflows by scripting Burp Suite exports into findings-tracker conversions. Authored a reusable file-upload testing playbook and professional CVSS-scored reports with remediation guidance.</p>
@@ -125,7 +117,7 @@
       </div>
 
       <!-- Case Study 2: MedAssist AI Platform -->
-      <div class="case-panel" id="case2">
+      <div class="case-panel" id="case2" data-kind="build">
         <div class="case-header accordion-toggle">
           <div>
             <h3>MedAssist AI: Telemedicine Platform</h3>
@@ -145,7 +137,7 @@
             <div class="case-stat-label">PWA Built</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-blue)">Live</div>
+            <div class="case-stat-num">Live</div>
             <div class="case-stat-label">AI Triage</div>
           </div>
           <div class="case-stat">
@@ -156,21 +148,21 @@
 
         <div class="findings-list">
           <div class="finding-item">
-            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <span class="severity-badge tag">Feature</span>
             <div class="finding-text">
               <h4>Real-Time AI Clinical Copilot</h4>
               <p>Integrated Gemini 2.5 Flash-Lite for AI-driven symptom triage and built a live copilot that provides differential diagnosis hints during real-time consultations.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Feature</span>
+            <span class="severity-badge tag">Feature</span>
             <div class="finding-text">
               <h4>Secure WebRTC Video & Audio</h4>
               <p>Engineered low-latency, secure video calling with Socket.io, including real-time speech-to-text transcription for automated doctor notes.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge severity-low" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Architecture</span>
+            <span class="severity-badge tag">Architecture</span>
             <div class="finding-text">
               <h4>Dockerized Microservices</h4>
               <p>Deployed the entire infrastructure using Docker containers, ensuring scalable production environments and offline-first mobile performance.</p>
@@ -181,87 +173,103 @@
       </div>
 
       <!-- Case Study 3: Luxury E-Commerce -->
-      <div class="case-panel" id="case3">
+      <div class="case-panel" id="case3" data-kind="test">
         <div class="case-header accordion-toggle">
           <div>
             <h3>The Watch Bazar</h3>
-            <p>Full-stack web application penetration test on a luxury product marketplace</p>
+            <p>Penetration test of a luxury marketplace and its Django and Supabase back end. Report delivered 16 March 2026.</p>
           </div>
           <div class="case-meta">
             <span class="case-meta-tag">Black Box</span>
             <span class="case-meta-tag">OWASP WSTG v4.2</span>
             <span class="case-meta-tag">React + Supabase + Django</span>
           </div>
-                  <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+          <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
         </div>
         <div class="case-content">
-        <div class="case-stats">
-          <div class="case-stat">
-            <div class="case-stat-num">5</div>
-            <div class="case-stat-label">Findings Total</div>
+          <div class="case-stats">
+            <div class="case-stat"><div class="case-stat-num">16</div><div class="case-stat-label">Findings Total</div></div>
+            <div class="case-stat"><div class="case-stat-num" style="color: var(--severity-critical)">1</div><div class="case-stat-label">Critical</div></div>
+            <div class="case-stat"><div class="case-stat-num" style="color: var(--severity-high)">6</div><div class="case-stat-label">High</div></div>
+            <div class="case-stat"><div class="case-stat-num" style="color: var(--severity-medium)">3</div><div class="case-stat-label">Medium</div></div>
+            <div class="case-stat"><div class="case-stat-num">6</div><div class="case-stat-label">Low / Info</div></div>
           </div>
-          <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--severity-critical)">1</div>
-            <div class="case-stat-label">Critical</div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--severity-high)">2</div>
-            <div class="case-stat-label">High</div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--severity-medium)">2</div>
-            <div class="case-stat-label">Medium</div>
-          </div>
-        </div>
-
-        <div class="findings-list">
+          <div class="findings-list">
           <div class="finding-item">
             <span class="severity-badge severity-critical">Critical</span>
             <div class="finding-text">
-              <h4>Database Exposure via Misconfigured Row Level Security</h4>
-              <p>Extracted hardcoded API key from client-side JavaScript. Dumped full database schema (28 tables) and
-                exfiltrated product, store, and internal data directly via PostgREST API, bypassing the application
-                entirely. CVSS 9.1.</p>
+              <h4>WB-01 · Hardcoded Supabase credentials in the client bundle</h4>
+              <p>The production Supabase URL and <code>anon</code> key sit inside the Vite JavaScript bundle. With the key, anyone can query the PostgreSQL REST endpoints directly and bypass the Django backend. <strong>Fix:</strong> move database access server-side, or enforce strict Row Level Security on every table.</p>
             </div>
           </div>
           <div class="finding-item">
             <span class="severity-badge severity-high">High</span>
             <div class="finding-text">
-              <h4>Insecure Direct Object Reference (IDOR)</h4>
-              <p>Order tracking endpoint required no authentication. Sequential order numbers allowed enumeration of all
-                customer orders and sensitive delivery information.</p>
+              <h4>WB-13 · No row-level security on SELECT for several tables</h4>
+              <p>Unauthenticated users could dump tables such as <code>brands</code> through the REST API, and storage assets still pointed at an older staging project. <strong>Fix:</strong> enable RLS on all tables and migrate assets to the production project.</p>
             </div>
           </div>
           <div class="finding-item">
             <span class="severity-badge severity-high">High</span>
             <div class="finding-text">
-              <h4>Role Escalation via Auth Sync</h4>
-              <p>Authentication synchronization endpoint accepted role parameters from client requests, enabling
-                potential escalation from customer to admin privileges.</p>
+              <h4>WB-15 · IDOR exposing seller financial data</h4>
+              <p>The Product API returned commissions and net profit (<code>pricing_breakdown</code>) to any authenticated seller, whoever owned the listing. <strong>Fix:</strong> a serializer that includes the field only for the listing owner.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>WB-10 · Broken account creation (authentication DoS)</h4>
+              <p>When the confirmation email failed, the backend rolled back the new account, which blocked every new sign-up. <strong>Fix:</strong> repair the email provider config and handle the failure without deleting the account.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>WB-04 · Client-side rate limiting, trivially bypassed</h4>
+              <p>Login throttling lived in <code>localStorage</code>; removing one key reset it. <strong>Fix:</strong> server-side rate limiting on the Django backend.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-high">High</span>
+            <div class="finding-text">
+              <h4>WB-02 and WB-05 · API route map and admin endpoints disclosed</h4>
+              <p>The JavaScript bundle listed every <code>/api/v1/</code> route, the full role hierarchy and the admin endpoints, handing an attacker the map for IDOR and privilege-escalation testing. <strong>Fix:</strong> code-split admin routes and enforce server-side authorization on all of them.</p>
             </div>
           </div>
           <div class="finding-item">
             <span class="severity-badge severity-medium">Medium</span>
             <div class="finding-text">
-              <h4>Exposed Admin Endpoints & API Documentation</h4>
-              <p>Django admin panel, Swagger docs, and API schema publicly accessible. robots.txt disclosed 12+
-                sensitive internal paths.</p>
+              <h4>WB-14 · IDOR on order tracking</h4>
+              <p>Any authenticated seller could view the status and store ownership of any order by changing the order number. <strong>Fix:</strong> check that the requester owns the order or its store.</p>
             </div>
           </div>
           <div class="finding-item">
             <span class="severity-badge severity-medium">Medium</span>
             <div class="finding-text">
-              <h4>Weak Content Security Policy</h4>
-              <p>CSP implemented via meta tag instead of HTTP header. Missing critical directives and unsafe-inline
-                allowing potential XSS exploitation.</p>
+              <h4>WB-11 · Weak idempotency on checkout</h4>
+              <p>Replaying a request was rejected, but changing one character of the <code>Idempotency-Key</code> created a duplicate order, because the payload was never hashed. <strong>Fix:</strong> store a hash of the canonical request body alongside the key.</p>
             </div>
           </div>
-        </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-medium">Medium</span>
+            <div class="finding-text">
+              <h4>WB-06 · Session token storage key disclosed</h4>
+              <p>The <code>localStorage</code> key holding auth tokens was visible in client code, making token theft simple if XSS is found. <strong>Fix:</strong> HttpOnly cookies.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge severity-low">Low / Info</span>
+            <div class="finding-text">
+              <h4>Six lower-severity and positive observations</h4>
+              <p>Public DRF browsable login (WB-12), client fingerprint header (WB-07), file-type validation gap on uploads (WB-16) and ghost 200 responses (WB-09). Also recorded as good practice: the OAuth flow had moved to PKCE (WB-03, fixed) and <code>robots.txt</code> was hardened (WB-08).</p>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
 
-      <!-- Case Study 4: University Portal -->
-      <div class="case-panel" id="case4">
+      <div class="case-panel" id="case4" data-kind="test">
         <div class="case-header accordion-toggle">
           <div>
             <h3>Confidential Client: University Portal</h3>
@@ -298,9 +306,8 @@
           <div class="finding-item">
             <span class="severity-badge severity-critical">Critical</span>
             <div class="finding-text">
-              <h4>SQL Injection: Authentication Bypass</h4>
-              <p>Login endpoint directly concatenated user input into SQL query. Confirmed via syntax error triggering
-                and comment injection. Enables full authentication bypass and database extraction.</p>
+              <h4>SQL Injection in the Login Endpoint</h4>
+              <p>The login endpoint concatenates the ID parameter into a SQL query. A single quote breaks the query and a trailing comment restores it, confirming injection. A WAF blocked automated extraction, but the unparameterized query is still the root cause. <strong>Fix:</strong> prepared statements and numeric-only ID validation.</p>
             </div>
           </div>
           <div class="finding-item">
@@ -356,7 +363,7 @@
       </div>
 
       <!-- Case Study 5: Bug Bounty -->
-      <div class="case-panel" id="case5">
+      <div class="case-panel" id="case5" data-kind="test">
         <div class="case-header accordion-toggle">
           <div>
             <h3>First Bug Bounty: SVG File Upload Manipulation</h3>
@@ -380,7 +387,7 @@
             <div class="case-stat-label">Severity</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-emerald)">✓</div>
+            <div class="case-stat-num">✓</div>
             <div class="case-stat-label">Fixed by Vendor</div>
           </div>
         </div>
@@ -401,11 +408,11 @@
       </div>
 
       <!-- Case Study 6: NCERT -->
-      <div class="case-panel" id="case6">
+      <div class="case-panel" id="case6" data-kind="tool">
         <div class="case-header accordion-toggle">
           <div>
             <h3>NCERT: National CERT Pakistan</h3>
-            <p>GRC Analyst engagement focusing on Information Security Management Systems (ISMS) and national policy alignment.</p>
+            <p>GRC internship focusing on Information Security Management Systems (ISMS) and national policy alignment.</p>
           </div>
           <div class="case-meta">
             <span class="case-meta-tag">GRC</span>
@@ -421,25 +428,25 @@
             <div class="case-stat-label">Impact Scale</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-emerald)">100%</div>
+            <div class="case-stat-num">100%</div>
             <div class="case-stat-label">Compliance Alignment</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-blue)">ISMS</div>
+            <div class="case-stat-num">ISMS</div>
             <div class="case-stat-label">Core Focus</div>
           </div>
         </div>
 
         <div class="findings-list">
           <div class="finding-item">
-            <span class="severity-badge severity-high" style="background: var(--accent-blue-dim); color: var(--accent-blue); border-color: rgba(59,130,246,0.25);">Policy</span>
+            <span class="severity-badge tag">Policy</span>
             <div class="finding-text">
               <h4>National Policy Alignment via PISF</h4>
               <p>Aligned national cybersecurity policies with enterprise risk standards by utilizing the Pakistan Information Security Framework (PISF), ensuring robust regulatory compliance across critical infrastructure.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge severity-medium" style="background: var(--accent-blue-dim); color: var(--accent-blue); border-color: rgba(59,130,246,0.25);">Audit</span>
+            <span class="severity-badge tag">Audit</span>
             <div class="finding-text">
               <h4>Comprehensive ISMS Reviews</h4>
               <p>Drove Governance, Risk, and Compliance (GRC) initiatives by conducting thorough reviews of Information Security Management Systems, identifying procedural gaps and recommending actionable improvements.</p>
@@ -450,7 +457,7 @@
       </div>
 
       <!-- Case Study 7: Agentic AI Pentester -->
-      <div class="case-panel" id="case7">
+      <div class="case-panel" id="case7" data-kind="tool">
         <div class="case-header accordion-toggle">
           <div>
             <h3>Agentic AI Penetration-Testing Framework</h3>
@@ -470,32 +477,32 @@
             <div class="case-stat-label">System Type</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: rgba(168, 85, 247, 1);">100%</div>
+            <div class="case-stat-num">100%</div>
             <div class="case-stat-label">Methodology Fit</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-emerald)">HITL</div>
+            <div class="case-stat-num">HITL</div>
             <div class="case-stat-label">Guardrails</div>
           </div>
         </div>
 
         <div class="findings-list">
           <div class="finding-item">
-            <span class="severity-badge" style="background: rgba(168, 85, 247, 0.1); color: rgb(168, 85, 247); border-color: rgba(168, 85, 247, 0.25);">Architecture</span>
+            <span class="severity-badge tag">Architecture</span>
             <div class="finding-text">
               <h4>Hierarchical Multi-Agent Orchestration</h4>
               <p>Designed an orchestrator that routes tasks to specialized sub-agents to perform cross-module attack-chain reasoning. This surfaced complex authorization flaws that single-scope automated scanning tools consistently missed.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge" style="background: rgba(168, 85, 247, 0.1); color: rgb(168, 85, 247); border-color: rgba(168, 85, 247, 0.25);">Memory</span>
+            <span class="severity-badge tag">Memory</span>
             <div class="finding-text">
               <h4>Self-Improving Knowledge Base</h4>
               <p>Engineered a persistent memory module featuring per-endpoint and data-model changelogs, ensuring the AI agents accumulate context and systematically improve attack coverage across sequential runs.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge severity-medium" style="background: var(--accent-emerald-dim); color: var(--accent-emerald); border-color: rgba(16,185,129,0.25);">Safety</span>
+            <span class="severity-badge tag">Safety</span>
             <div class="finding-text">
               <h4>Strict Autonomous Guardrails</h4>
               <p>Built comprehensive safety controls into the pipeline, including tiered permission levels, mandatory Human-in-the-Loop (HITL) approvals for destructive actions, and automated pre-execution verification hooks.</p>
@@ -506,7 +513,7 @@
       </div>
 
       <!-- Case Study 8: SSRF Automation Tooling -->
-      <div class="case-panel" id="case8">
+      <div class="case-panel" id="case8" data-kind="tool">
         <div class="case-header accordion-toggle">
           <div>
             <h3>Custom SSRF Payload Engine</h3>
@@ -530,21 +537,21 @@
             <div class="case-stat-label">Evasion Classes</div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num" style="color: var(--accent-emerald)">Live</div>
+            <div class="case-stat-num">Live</div>
             <div class="case-stat-label">Dashboard</div>
           </div>
         </div>
 
         <div class="findings-list">
           <div class="finding-item">
-            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Tooling</span>
+            <span class="severity-badge tag">Tooling</span>
             <div class="finding-text">
               <h4>Comprehensive Evasion Capability</h4>
               <p>Engineered a dynamic payload generation engine capable of 70+ specific bypass techniques across 12 distinct evasion classes, including DNS rebinding, cloud-metadata exfiltration, and protocol confusion attacks.</p>
             </div>
           </div>
           <div class="finding-item">
-            <span class="severity-badge" style="background: rgba(20, 184, 166, 0.1); color: rgb(20, 184, 166); border-color: rgba(20, 184, 166, 0.25);">Workflow</span>
+            <span class="severity-badge tag">Workflow</span>
             <div class="finding-text">
               <h4>Live Results & Tracking Dashboard</h4>
               <p>Coupled the payload engine with a live results dashboard for immediate feedback during network exposure tests, significantly streamlining the security assessment process and minimizing false positives.</p>
@@ -552,77 +559,211 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║         CONTACT SECTION              ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-content reveal">
-        <span class="section-label">Let's Talk</span>
-        <h2>Let's Secure Your <span class="gradient-text">Business</span></h2>
-        <p>Have a project that needs a security assessment? Let's discuss how I can help protect your digital assets.
-        </p>
-
-        <div class="contact-links">
-          <div class="contact-group">
-            <a href="mailto:shariquebaig0@gmail.com" class="contact-link" id="emailLink">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              Email Me
-            </a>
-            <button class="contact-copy" id="copyEmail" title="Copy email to clipboard">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-            </button>
+      <div class="case-panel" id="case9" data-kind="build">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>ImpactAlign &amp; ImpactAlign SDG</h3>
+            <p>Two sites on one Supabase backend: SDG alignment for individual researchers and startups, and an evidence-based scoring platform for institutions.</p>
           </div>
-          <a href="https://linkedin.com/in/shariquebaig" target="_blank" rel="noopener" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/ShariqueBaig" target="_blank" rel="noopener" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-              </path>
-            </svg>
-            GitHub
-          </a>
+          <div class="case-meta">
+            <span class="case-meta-tag">React + Supabase</span>
+            <span class="case-meta-tag">Gemini Edge Functions</span>
+            <span class="case-meta-tag">Row-Level Security</span>
+          </div>
+          <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">2</div>
+            <div class="case-stat-label">Sites, One Backend</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">RLS</div>
+            <div class="case-stat-label">Data Isolation</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">AI</div>
+            <div class="case-stat-label">SDG Mapping</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge tag">Product</span>
+            <div class="finding-text">
+              <h4>Individual submissions with verifiable certificates</h4>
+              <p>ImpactAlign SDG lets researchers, students and startups submit a manuscript, thesis, proposal, project or startup, get AI mapping to SDGs, targets and indicators, and receive a certificate with a QR code and public DOI lookup.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Product</span>
+            <div class="finding-text">
+              <h4>Institutional Activity Register</h4>
+              <p>ImpactAlign logs institutional activity once and feeds three services: SDG alignment, a predicted HEC ORIC scorecard, and the Shehnaz Index. Scores are labelled predicted or self-assessed, and an admin panel manages subscriptions, organisations and an audit log.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Security</span>
+            <div class="finding-text">
+              <h4>Confidential IP behind strict data rules</h4>
+              <p>PostgreSQL Row-Level Security protects unpublished work while a curated public view powers the project explorer; private PDFs are served only through short-lived signed URLs.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Security</span>
+            <div class="finding-text">
+              <h4>Guardrailed AI evaluation</h4>
+              <p>Gemini runs server-side in Supabase Edge Functions with prompt-injection guardrails, and API keys were moved out of the client into server-side environments.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case10" data-kind="build">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>PSC Bundle: PlayStation Store for Pakistan</h3>
+            <p>Full-stack online shop for games, PS Plus subscriptions, gift cards and consoles, live at pscbundle.com.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Next.js</span>
+            <span class="case-meta-tag">Supabase</span>
+            <span class="case-meta-tag">Docker + Caddy</span>
+          </div>
+          <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">1</div>
+            <div class="case-stat-label">Live Storefront</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">30 min</div>
+            <div class="case-stat-label">Checkout Stock Hold</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">CI/CD</div>
+            <div class="case-stat-label">Auto-Deploy</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge tag">Feature</span>
+            <div class="finding-text">
+              <h4>Gateway-free payment flow</h4>
+              <p>Customers check out against a 30-minute stock hold, pay from any bank app or wallet, upload a payment screenshot, and staff approve or reject it in an admin console before delivery over WhatsApp, library or email.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Security</span>
+            <div class="finding-text">
+              <h4>Business rules enforced in the database</h4>
+              <p>Postgres functions and Row-Level Security hold the rules for stock, orders and roles, with email-code or Google sign-in for customers and separate owner and agent staff roles. Database rules are covered by automated tests.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Architecture</span>
+            <div class="finding-text">
+              <h4>Self-hosted production setup</h4>
+              <p>Deployed with Docker Compose and Caddy automatic HTTPS on a VPS, with GitHub Actions running tests before each deploy, nightly database backups to a private bucket, and a documented restore procedure.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="case-panel" id="case11" data-kind="build">
+        <div class="case-header accordion-toggle">
+          <div>
+            <h3>HEW Foundation: Clinic Management Platform</h3>
+            <p>Multi-branch clinic management and patient portal, live at app.hewfoundation.org.pk.</p>
+          </div>
+          <div class="case-meta">
+            <span class="case-meta-tag">Next.js</span>
+            <span class="case-meta-tag">PostgreSQL + Drizzle</span>
+            <span class="case-meta-tag">English + Urdu (RTL)</span>
+          </div>
+          <div class="accordion-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </div>
+        <div class="case-content">
+        <div class="case-stats">
+          <div class="case-stat">
+            <div class="case-stat-num">4</div>
+            <div class="case-stat-label">Branches, One Deployment</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">EN/UR</div>
+            <div class="case-stat-label">Bilingual, RTL</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">Audit</div>
+            <div class="case-stat-label">Every Mutation Logged</div>
+          </div>
+        </div>
+
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="severity-badge tag">Security</span>
+            <div class="finding-text">
+              <h4>Branch-scoped multi-tenancy</h4>
+              <p>Every tenant table carries a branch ID and access is checked in the service layer through a branch-scoping guard, not only in the UI.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Compliance</span>
+            <div class="finding-text">
+              <h4>Audit trail and patient privacy</h4>
+              <p>Every mutation writes an audit-log row, and no patient health information is written to application logs.</p>
+            </div>
+          </div>
+          <div class="finding-item">
+            <span class="severity-badge tag">Architecture</span>
+            <div class="finding-text">
+              <h4>Lean, reliable delivery</h4>
+              <p>A pnpm monorepo with a web app and a background worker, deployed to a VPS from GitHub Actions with health-check rollback, and print-styled prescriptions and receipts instead of server-side PDF generation.</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="contact" id="contact">
+      <div class="container">
+        <h2>Bring me the app you are worried about.</h2>
+        <p>Whether it is a client project that needs a pentest report, or a product that has to be secure by the time it launches, tell me what you are shipping.</p>
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║             FOOTER                   ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
+        <div class="contact-actions">
+          <a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="btn btn-primary">
+            Book a partnership call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <span class="contact-group">
+            <button class="contact-copy" id="copyEmail" title="Copy email address" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+            <span class="copy-note" id="copyNote" role="status"></span>
+          </span>
+          <a href="https://linkedin.com/in/shariquebaig" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/ShariqueBaig" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="container">
-      <span class="footer-text">© 2026 Sharique Baig. All rights reserved.</span>
-      <span class="footer-tag">&lt;<span>secured</span> by=&quot;design&quot; /&gt;</span>
-      </div>
-      </div>
+      <span>© 2026 Sharique Baig</span>
+      <span>Available for agency partnerships and product builds</span>
+    </div>
   </footer>
 
-
-  <!-- Script -->
   <script src="js/script.js"></script>
-
 </body>
-
 </html>

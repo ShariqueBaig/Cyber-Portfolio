@@ -3,607 +3,673 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sharique Baig | Cybersecurity Consultant & Penetration Tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sharique Baig | Security testing and secure engineering</title>
   <meta name="description"
-    content="Sharique Baig, Cybersecurity Consultant & Penetration Tester. Securing digital assets through offensive security testing, vulnerability assessment, and security consulting.">
+    content="Sharique Baig works in application security and full-stack engineering. White-label penetration testing for agencies, and secure software built, hardened and fixed for startups and organisations.">
   <meta name="keywords"
-    content="cybersecurity, penetration testing, vulnerability assessment, security consultant, ethical hacking">
+    content="penetration testing, white-label pentest, application security, secure software development, DevSecOps, Supabase RLS, Next.js, GRC">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap"
     rel="stylesheet">
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║           NAVIGATION                 ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <nav class="navbar" id="navbar">
+  <header class="site-header" id="navbar">
     <div class="container">
-      <a href="#" class="nav-logo">&lt;<span>SB</span>/&gt;</a>
+      <a href="index.html" class="brand"><b>Sharique Baig</b><span>Security testing + secure engineering</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#engagements">Engagements</a></li>
+        <li><a href="#casefiles">Case files</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="projects.html">Case Studies</a></li>
-        <li><a href="#methodology">Methodology</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="nav-cta">Book a Partnership Call</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#toolbox">Tools</a></li>
+        <li><a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="nav-cta">Book a call</a></li>
       </ul>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </nav>
+  </header>
 
+  <main id="main">
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║           HERO SECTION               ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-subtitle">B2B DevSecOps Consultancy</p>
-        <h1>
-          The Secure Innovation Partner for<br>
-          <span class="highlight">Agencies & Startups</span>
-        </h1>
-        <p class="hero-tagline">
-          <span id="typed-text"></span><span class="cursor"></span>
-        </p>
-        <div class="hero-buttons">
-          <a href="projects.html" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            View My Work
-          </a>
-          <a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="btn btn-outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-            Book a Partnership Call
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-terminal">
-        <div class="terminal-header">
-          <div class="terminal-dot red"></div>
-          <div class="terminal-dot yellow"></div>
-          <div class="terminal-dot green"></div>
-          <span class="terminal-title">sharique@kali:~</span>
-        </div>
-        <div class="terminal-body">
-          <div><span class="prompt">$</span> <span class="command">nmap -sC -sV target.com</span></div>
-          <div class="output">Starting Nmap scan...</div>
-          <div class="output">PORT &nbsp;&nbsp; STATE &nbsp; SERVICE</div>
-          <div class="output">22/tcp &nbsp;open &nbsp;&nbsp; ssh</div>
-          <div class="output">80/tcp &nbsp;open &nbsp;&nbsp; http</div>
-          <div class="output">443/tcp open &nbsp;&nbsp; https</div>
-          <br>
-          <div><span class="prompt">$</span> <span class="command">sqlmap -u "target.com/api/login" --dbs</span></div>
-          <div class="warning">[!] Injectable parameter found: 'erp'</div>
-          <div class="accent">[+] Database: production_db</div>
-          <br>
-          <div><span class="prompt">$</span> <span class="command">curl -H "apikey: $ANON_KEY"
-              $SUPABASE_URL/rest/v1/</span></div>
-          <div class="warning">[!] RLS disabled — Full schema exposed (28 tables)</div>
-          <div class="accent">[+] Exfiltrated: products, orders, users...</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║           ABOUT SECTION              ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="about">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">About Me</span>
-      </div>
-
-      <div class="about-grid reveal">
-        <div class="about-avatar">SB</div>
-
-        <div class="about-text">
-          <h2>Proactive security for <span class="gradient-text">modern digital assets</span></h2>
-          <p>
-            Unlike traditional developers who treat security as an afterthought, or security auditors who only point out flaws without knowing how to fix them, I provide end-to-end <strong>Secure Innovation</strong>.
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div>
+          <h1>I find the vulnerabilities, then write the fix.</h1>
+          <p class="hero-lede">
+            I work in application security and full-stack engineering. Development agencies hire me for white-label penetration tests their clients can hand to procurement.
+            Startups and organisations hire me to build software that holds up when someone tests it, or to fix
+            what an audit already found.
           </p>
-          <p>
-            Because I am both a Full-Stack Engineer and an AppSec Specialist, I don't just hand you a list of vulnerabilities—I patch your code, harden your architecture, and write your compliance reports.
-          </p>
-          <p>
-            Whether you are a startup needing a secure MVP, or a development agency needing white-label penetration testing to pass vendor assessments, I ensure your software is enterprise-ready.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-stats reveal">
-        <div class="stat-card">
-          <div class="stat-number">10+</div>
-          <div class="stat-label">Enterprise Projects</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">40+</div>
-          <div class="stat-label">Vulnerabilities Remediated</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">1</div>
-          <div class="stat-label">Proprietary AI Sec-Tool</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Delivery Rate</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║        WHO I PARTNER WITH            ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="target-audience" style="background-color: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Target Audience</span>
-        <h2>Who I <span class="gradient-text">Partner With</span></h2>
-      </div>
-      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <div class="service-card reveal" style="background: var(--surface-light);">
-          <h3>Development Agencies</h3>
-          <p>You build great software, but lack in-house security experts. I provide white-label penetration testing and security audits so your clients can pass vendor assessments and you can close enterprise deals.</p>
-        </div>
-        <div class="service-card reveal" style="background: var(--surface-light);">
-          <h3>Funded Startups & Incubators</h3>
-          <p>You need to move fast, but failing a compliance audit or suffering a breach could kill your startup. I build your MVP securely from day one to avoid costly refactoring and reputational damage.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║          SERVICES SECTION            ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="services">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">What I Offer</span>
-        <h2>Security <span class="gradient-text">Service Packages</span></h2>
-        <p>End-to-end solutions for agencies and startups.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          </div>
-          <h3>Secure MVP Development</h3>
-          <p>Full-stack product development (React, Node.js) engineered with enterprise-grade security from day one, including secure authentication, parameterized queries, and RBAC.</p>
-          <div class="service-tags">
-            <span class="service-tag">Next.js / Node.js</span>
-            <span class="service-tag">Secure by Design</span>
-            <span class="service-tag">Startups</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
-          </div>
-          <h3>AI-Augmented Penetration Testing</h3>
-          <p>Comprehensive Web/API pentesting mapped to OWASP Top 10, accelerated by my private Agentic AI framework. Delivered with a boardroom-ready report and remediation snippets. Perfect for white-labeling.</p>
-          <div class="service-tags">
-            <span class="service-tag">White-Label Audits</span>
-            <span class="service-tag">OWASP Top 10</span>
-            <span class="service-tag">AI-Powered</span>
-          </div>
-        </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="m9 14 2 2 4-4"></path></svg>
-          </div>
-          <h3>Fractional DevSecOps & GRC</h3>
-          <p>Ongoing security leadership for mid-market companies. I review code, run monthly vulnerability scans, manage cloud security posture, and guide you toward ISO 27001/NIST compliance.</p>
-          <div class="service-tags">
-            <span class="service-tag">ISO 27001 / NIST</span>
-            <span class="service-tag">Cloud Security</span>
-            <span class="service-tag">Retainer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║        EXPERIENCE SECTION            ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="experience">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Career</span>
-        <h2>Industry <span class="gradient-text">Experience</span></h2>
-        <p>Key professional roles delivering enterprise security and governance solutions.</p>
-      </div>
-
-      <div class="experience-list">
-        <div class="experience-item reveal">
-          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
-            <img src="assets/higher-education-commission-pakistan-logo-png_seeklogo-275152.png" alt="HEC Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; background: white; padding: 6px;">
-            <div>
-              <h3 style="margin-bottom: 0.25rem;">Full-Stack Developer (Security Focused)</h3>
-              <div class="exp-company">Higher Education Commission (HEC) / ORIC</div>
-              <div class="exp-date">Recent</div>
-            </div>
-          </div>
-          <ul class="exp-highlights">
-            <li>Designed and developed the ORIC Research & Innovation Portal (ImpactAlign) to streamline the submission and evaluation of research proposals.</li>
-            <li>Engineered a secure PostgreSQL database schema with strict Row-Level Security (RLS) policies to protect confidential intellectual property while exposing a curated public view.</li>
-            <li>Implemented secure document handling using Supabase Storage with short-lived signed URLs, gating private PDFs behind strict authentication.</li>
-            <li>Integrated Google Gemini AI via Supabase Edge Functions with implemented prompt-injection guardrails and migrated sensitive API keys to server-side environments for enhanced security.</li>
-          </ul>
-        </div>
-        <div class="experience-item reveal">
-          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
-            <img src="assets/securiti_logo.png" alt="Securiti.ai Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; background: white; padding: 6px;">
-            <div>
-              <h3 style="margin-bottom: 0.25rem;">Application Security Specialist</h3>
-              <div class="exp-company">Securiti.ai (A Veeam Company)</div>
-              <div class="exp-date">Jun 2026 to Present</div>
-            </div>
-          </div>
-          <ul class="exp-highlights">
-            <li>Executed web/API pentesting on enterprise SaaS platforms, identifying 20+ vulnerabilities (up to Critical) per OWASP standards.</li>
-            <li>Exploited access control flaws (IDOR/BOLA) and chained exploits for XSS, SSRF, and CSRF with reproducible PoCs.</li>
-            <li>Developed Python tooling for SSRF evasion and automated Burp Suite workflows for streamlined regression testing.</li>
-            <li><strong>Key Project: Agentic AI Pentesting Framework:</strong> Architected a hierarchical LLM multi-agent system to autonomously map attack surfaces, execute pentests, and surface complex authorization flaws with strict human-in-the-loop guardrails.</li>
-          </ul>
-          <a href="projects.html?tab=case1" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-top: 1rem;">View detailed breakdown <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
-        </div>
-
-        <div class="experience-item reveal">
-          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
-            <img src="assets/ncert_logo.png" alt="NCERT Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px;">
-            <div>
-              <h3 style="margin-bottom: 0.25rem;">GRC Analyst</h3>
-              <div class="exp-company">NCERT (National CERT Pakistan)</div>
-              <div class="exp-date">Jul 2026 to Present</div>
-            </div>
-          </div>
-          <ul class="exp-highlights">
-            <li>Drove GRC initiatives by conducting comprehensive reviews of Information Security Management Systems (ISMS).</li>
-            <li>Aligned national cybersecurity policies with enterprise risk standards utilizing the PISF framework.</li>
-          </ul>
-          <a href="projects.html?tab=case6" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-top: 1rem;">View detailed breakdown <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
-        </div>
-
-        <div class="experience-item reveal">
-          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
-            <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; background: var(--surface-light); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; padding: 10px;">
-              <img src="assets/watch bazaar logo.svg" alt="The Watch Bazar Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-            </div>
-            <div>
-              <h3 style="margin-bottom: 0.25rem;">Security Consultant</h3>
-              <div class="exp-company">The Watch Bazar</div>
-              <div class="exp-date">Jan 2025 to Present</div>
-            </div>
-          </div>
-          <ul class="exp-highlights">
-            <li>Secured financial transactions and customer data for a luxury e-commerce marketplace by identifying and remediating severe database exposures.</li>
-          </ul>
-          <a href="projects.html?tab=case3" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-top: 1rem;">View detailed breakdown <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
-        </div>
-
-        <div class="experience-item reveal">
-          <div class="exp-header" style="display: flex; align-items: center; gap: 1.25rem;">
-            <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; background: var(--surface-light); border: 1px dashed var(--border); border-radius: 8px; color: var(--accent-cyan);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </div>
-            <div>
-              <h3 style="margin-bottom: 0.25rem;">Independent Security Consultant</h3>
-              <div class="exp-company">Confidential Client (EdTech)</div>
-              <div class="exp-date">Jan 2025 to Present</div>
-            </div>
-          </div>
-          <ul class="exp-highlights">
-            <li>Safeguarded sensitive student academic records for a university by resolving critical logic flaws in their authentication systems.</li>
-          </ul>
-          <a href="projects.html?tab=case4" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-top: 1rem;">View detailed breakdown <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║       CASE STUDIES SECTION           ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="casestudies">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Portfolio</span>
-        <h2>Case <span class="gradient-text">Studies</span></h2>
-        <p>Real-world security assessments and high-impact development projects.</p>
-        <div style="margin-top: 2rem;">
-          <a href="projects.html" class="btn btn-primary">
-            View All Projects & Case Studies
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║       METHODOLOGY SECTION            ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="methodology">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Process</span>
-        <h2>How I <span class="gradient-text">Work</span></h2>
-        <p>A structured, methodology-driven approach to uncovering and remediating security vulnerabilities.</p>
-      </div>
-
-      <div class="methodology-timeline reveal">
-        <div class="method-step" data-step="01">
-          <h3>Reconnaissance & Information Gathering</h3>
-          <p>Passive and active recon to map the attack surface. This includes technology fingerprinting, subdomain enumeration, API
-            endpoint discovery, and client-side source code analysis.</p>
-        </div>
-        <div class="method-step" data-step="02">
-          <h3>Vulnerability Discovery</h3>
-          <p>Combining automated scanning (Burp Suite, ZAP, ffuf) with manual testing against OWASP WSTG and Top 10 to
-            identify security weaknesses across the entire application stack.</p>
-        </div>
-        <div class="method-step" data-step="03">
-          <h3>Exploitation & Proof of Concept</h3>
-          <p>Safe, controlled exploitation with clear evidence capture. We document screenshots, HTTP requests/responses, and
-            reproducible steps without performing destructive actions.</p>
-        </div>
-        <div class="method-step" data-step="04">
-          <h3>Business Logic Testing</h3>
-          <p>Application-specific tests targeting payment flows, privilege escalation, authentication bypass, and
-            workflow manipulation that automated tools miss.</p>
-        </div>
-        <div class="method-step" data-step="05">
-          <h3>Reporting & Remediation</h3>
-          <p>Detailed report with executive summary, technical findings (CVSS scored), step-by-step reproduction, and
-            prioritized remediation recommendations.</p>
-        </div>
-        <div class="method-step" data-step="06">
-          <h3>Verification & Retest</h3>
-          <p>Post-remediation validation to confirm fixes are effective. Building a long-term partnership for ongoing
-            security assurance.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║          SKILLS SECTION              ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="skills">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Technical Expertise</span>
-        <h2>Skills & <span class="gradient-text">Tools</span></h2>
-      </div>
-
-      <div class="skills-grid reveal">
-        <div class="skill-category">
-          <h3>Offensive Security</h3>
-          <div class="skill-pills">
-            <span class="skill-pill">Burp Suite Pro</span>
-            <span class="skill-pill">OWASP ZAP</span>
-            <span class="skill-pill">SQLMap</span>
-            <span class="skill-pill">Nmap</span>
-            <span class="skill-pill">ffuf</span>
-            <span class="skill-pill">Metasploit</span>
-            <span class="skill-pill">Wireshark</span>
-            <span class="skill-pill">Kali Linux</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Vulnerability Classes</h3>
-          <div class="skill-pills">
-            <span class="skill-pill amber">SQL Injection</span>
-            <span class="skill-pill amber">XSS</span>
-            <span class="skill-pill amber">CSRF</span>
-            <span class="skill-pill amber">IDOR</span>
-            <span class="skill-pill amber">SSRF</span>
-            <span class="skill-pill amber">2FA Bypass</span>
-            <span class="skill-pill amber">Buffer Overflow</span>
-            <span class="skill-pill amber">Privilege Escalation</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Languages & Frameworks</h3>
-          <div class="skill-pills">
-            <span class="skill-pill green">Python</span>
-            <span class="skill-pill green">JavaScript</span>
-            <span class="skill-pill green">C/C++</span>
-            <span class="skill-pill green">SQL</span>
-            <span class="skill-pill green">Node.js</span>
-            <span class="skill-pill green">React</span>
-            <span class="skill-pill green">Next.js</span>
-            <span class="skill-pill green">Docker</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Standards & Methods</h3>
-          <div class="skill-pills">
-            <span class="skill-pill purple">OWASP Top 10</span>
-            <span class="skill-pill purple">OWASP WSTG</span>
-            <span class="skill-pill purple">CVSS v3.1</span>
-            <span class="skill-pill purple">Zero Trust</span>
-            <span class="skill-pill purple">MITRE ATT&CK</span>
-            <span class="skill-pill purple">Governance (ISMS/PISF)</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>AI & Systems</h3>
-          <div class="skill-pills">
-            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">LLMs / AI Agents</span>
-            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">Federated Learning</span>
-            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">QEMU / xv6</span>
-            <span class="skill-pill" style="background: rgba(234, 179, 8, 0.1); color: var(--accent-yellow); border-color: rgba(234, 179, 8, 0.2);">Python Automation</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║      CERTIFICATIONS SECTION          ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="certifications">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Credentials</span>
-        <h2>Certifications</h2>
-      </div>
-
-      <div class="certs-grid reveal">
-        <div class="cert-card">
-          <div class="cert-issuer">ISC2: International Information System Security Certification Consortium</div>
-          <h3>Certified in Cybersecurity (CC)</h3>
-          <div class="cert-date">In Progress</div>
-          <ul class="cert-highlights">
-            <li>Foundational knowledge of security principles & operations</li>
-            <li>Incident response, network security, and access control</li>
-            <li>Aligned with industry-standard ISC2 CBK</li>
-          </ul>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-issuer">Google Career Certificates</div>
-          <h3>Google Cybersecurity Professional Certificate</h3>
-          <div class="cert-date">2026 · Coursera</div>
-          <ul class="cert-highlights">
-            <li>Hands-on Linux, SQL, Python for security automation</li>
-            <li>SIEM tools, IDS, and packet analysis</li>
-            <li>Vulnerability assessment & incident response</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║         CONTACT SECTION              ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-content reveal">
-        <span class="section-label">Let's Talk</span>
-        <h2>Let's Secure Your <span class="gradient-text">Business</span></h2>
-        <p>Looking for a white-label security partner or need a secure MVP? Let's schedule a time to discuss how we can work together.
-        </p>
-
-        <div class="contact-links">
-          <div class="contact-group">
-            <a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="contact-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-              Book a Partnership Call
+          <div class="hero-actions">
+            <a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="btn btn-primary">
+              Book a partnership call
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <button class="contact-copy" id="copyEmail" title="Copy email to clipboard">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-            </button>
+            <a href="projects.html" class="btn btn-quiet">Read the case files</a>
           </div>
-          <a href="https://linkedin.com/in/shariquebaig" target="_blank" rel="noopener" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/ShariqueBaig" target="_blank" rel="noopener" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-              </path>
-            </svg>
-            GitHub
-          </a>
+        </div>
+
+        
+        <!-- Findings, one fix each -->
+        <div class="sheet-wrap">
+          <div class="sheet" id="findingSheet" role="region" aria-roledescription="carousel" aria-label="Findings from my reports, each with its fix">
+            <div class="sheet-progress" aria-hidden="true"></div>
+            <article class="slide is-active" aria-label="Finding 1 of 5">
+              <div class="sheet-bar">
+                <span class="caps">WB-01 · The Watch Bazar</span>
+                <span class="chip crit">Critical</span>
+              </div>
+              <div class="sheet-body">
+                <h2 class="sheet-title">Hardcoded Supabase credentials in the client bundle</h2>
+                <p>The production Supabase URL and <code>anon</code> key sit inside the JavaScript bundle. With the key, anyone can query the database REST endpoints directly and skip the backend entirely.</p>
+                <ol class="sheet-steps"><li>Open DevTools, then Sources, then the main bundle.</li><li>Search for <code>supabase.co</code> to find the initialisation string and key.</li></ol>
+                <div class="sheet-label"><span class="caps">Remediation</span><span class="caps">Supabase · SQL</span></div>
+                <div class="diff">
+                <span class="del">- anon key can read any table</span>
+                <span class="add">+ alter table orders enable row level security;</span>
+                <span class="add">+ create policy owner_read on orders</span>
+                <span class="add">+   for select using (auth.uid() = user_id);</span>
+                <span class="ctx">  -- deny by default, then allow per role</span>
+                </div>
+              </div>
+              <div class="sheet-foot">
+                <span class="caps">1 of 16 findings · 16 Mar 2026</span>
+                <span class="stamp">Fixed</span>
+              </div>
+            </article>
+            <article class="slide" aria-label="Finding 2 of 5">
+              <div class="sheet-bar">
+                <span class="caps">WB-15 · The Watch Bazar</span>
+                <span class="chip high">High</span>
+              </div>
+              <div class="sheet-body">
+                <h2 class="sheet-title">Seller financial data exposed to every other seller</h2>
+                <p>The Product API returns commissions and net profit to any authenticated seller, whoever owns the listing. A competitor can scrape every store's margins.</p>
+                <ol class="sheet-steps"><li>Authenticate as Seller A.</li><li>Request Seller B's product ID and read <code>pricing_breakdown</code> in the JSON.</li></ol>
+                <div class="sheet-label"><span class="caps">Remediation</span><span class="caps">Django · Python</span></div>
+                <div class="diff">
+                <span class="del">- fields = [..., "pricing_breakdown"]</span>
+                <span class="add">+ def to_representation(self, product):</span>
+                <span class="add">+     data = super().to_representation(product)</span>
+                <span class="add">+     if self.context["request"].user != product.store.owner:</span>
+                <span class="add">+         data.pop("pricing_breakdown", None)</span>
+                <span class="add">+     return data</span>
+                </div>
+              </div>
+              <div class="sheet-foot">
+                <span class="caps">15 of 16 findings · 16 Mar 2026</span>
+                <span class="stamp">Fixed</span>
+              </div>
+            </article>
+            <article class="slide" aria-label="Finding 3 of 5">
+              <div class="sheet-bar">
+                <span class="caps">Finding 09 · University portal</span>
+                <span class="chip crit">Critical</span>
+              </div>
+              <div class="sheet-body">
+                <h2 class="sheet-title">Password reset code can be sent to any email address</h2>
+                <p>The reset request takes the destination email from the client request body. Change it and the one-time code goes to the attacker, who can then set the victim's password.</p>
+                <ol class="sheet-steps"><li>Start Forgot Password for a target ID and intercept the OTP request.</li><li>Replace the <code>email</code> field with an attacker address and use the code received.</li></ol>
+                <div class="sheet-label"><span class="caps">Remediation</span><span class="caps">Node · Express</span></div>
+                <div class="diff">
+                <span class="del">- sendOtp(req.body.email)</span>
+                <span class="add">+ const { email } = await getUser(session.userId)</span>
+                <span class="add">+ sendOtp(email)</span>
+                <span class="ctx">  // never accept a delivery address from the client</span>
+                </div>
+              </div>
+              <div class="sheet-foot">
+                <span class="caps">9 of 11 findings · 10 Jan 2026</span>
+                <span class="stamp">Fixed</span>
+              </div>
+            </article>
+            <article class="slide" aria-label="Finding 4 of 5">
+              <div class="sheet-bar">
+                <span class="caps">WB-04 · The Watch Bazar</span>
+                <span class="chip high">High</span>
+              </div>
+              <div class="sheet-body">
+                <h2 class="sheet-title">Login rate limit that lives in the browser</h2>
+                <p>Brute-force protection is implemented entirely in <code>localStorage</code>, so a script that ignores the page can attempt unlimited logins.</p>
+                <ol class="sheet-steps"><li>Make 5 wrong attempts to trigger the limit.</li><li>Run <code>localStorage.removeItem("auth_login_attempts")</code> and try again.</li></ol>
+                <div class="sheet-label"><span class="caps">Remediation</span><span class="caps">Django · Python</span></div>
+                <div class="diff">
+                <span class="del">- localStorage.setItem("auth_login_attempts", n)</span>
+                <span class="add">+ @ratelimit(key="ip", rate="5/m", block=True)</span>
+                <span class="add">+ def login(request):</span>
+                <span class="add">+     ...</span>
+                </div>
+              </div>
+              <div class="sheet-foot">
+                <span class="caps">4 of 16 findings · 16 Mar 2026</span>
+                <span class="stamp">Fixed</span>
+              </div>
+            </article>
+            <article class="slide" aria-label="Finding 5 of 5">
+              <div class="sheet-bar">
+                <span class="caps">WB-11 · The Watch Bazar</span>
+                <span class="chip med">Medium</span>
+              </div>
+              <div class="sheet-body">
+                <h2 class="sheet-title">Duplicate orders by changing one character of the key</h2>
+                <p>Checkout checks the <code>Idempotency-Key</code> header but never validates the payload against it, so a new key places the same order again.</p>
+                <ol class="sheet-steps"><li>Record the key from a checkout and replay it: rejected.</li><li>Change one character of the key and resend: a new order is created.</li></ol>
+                <div class="sheet-label"><span class="caps">Remediation</span><span class="caps">Django · Python</span></div>
+                <div class="diff">
+                <span class="del">- if Order.objects.filter(idempotency_key=key).exists():</span>
+                <span class="add">+ digest = sha256(canonical_json(body)).hexdigest()</span>
+                <span class="add">+ if Order.objects.filter(body_hash=digest,</span>
+                <span class="add">+                         created__gte=window).exists():</span>
+                <span class="add">+     return duplicate_response()</span>
+                </div>
+              </div>
+              <div class="sheet-foot">
+                <span class="caps">11 of 16 findings · 16 Mar 2026</span>
+                <span class="stamp">Fixed</span>
+              </div>
+            </article>
+          </div>
+          <div class="sheet-dots" role="group" aria-label="Choose a finding"><button type="button" class="dot" aria-label="Show finding 1" aria-current="true"></button><button type="button" class="dot" aria-label="Show finding 2"></button><button type="button" class="dot" aria-label="Show finding 3"></button><button type="button" class="dot" aria-label="Show finding 4"></button><button type="button" class="dot" aria-label="Show finding 5"></button></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Worked with -->
+    <section class="worked" aria-label="Organisations I have secured and built for">
+      <div class="container">
+        <span class="caps">Secured and built for</span>
+        <div class="logo-marquee"><div class="logo-track">
+          <ul class="logo-row">
+          <li><img src="assets/securiti_logo.png" alt="Securiti.ai" loading="lazy"></li>
+          <li><img src="assets/ncert_logo.png" alt="NCERT, National CERT Pakistan" loading="lazy"></li>
+          <li><img src="assets/logo-impactalign-sdg.png" alt="ImpactAlign SDG" loading="lazy"></li>
+          <li><img src="assets/logo-impactalign.png" alt="ImpactAlign" loading="lazy"></li>
+          <li><img src="assets/shehnaz%20index%20logo.webp" alt="Shehnaz Index" loading="lazy"></li>
+          <li class="on-dark"><img src="assets/pscbundle-logo.png" alt="PSC Bundle" loading="lazy"></li>
+          <li><img src="assets/hew-foundation-logo.jpeg" alt="HEW Foundation" loading="lazy"></li>
+          <li><img src="assets/watch%20bazaar%20logo.svg" alt="The Watch Bazar" loading="lazy"></li>
+        </ul>
+          <ul class="logo-row" aria-hidden="true">
+          <li><img src="assets/securiti_logo.png" alt="" loading="lazy"></li>
+          <li><img src="assets/ncert_logo.png" alt="" loading="lazy"></li>
+          <li><img src="assets/logo-impactalign-sdg.png" alt="" loading="lazy"></li>
+          <li><img src="assets/logo-impactalign.png" alt="" loading="lazy"></li>
+          <li><img src="assets/shehnaz%20index%20logo.webp" alt="" loading="lazy"></li>
+          <li class="on-dark"><img src="assets/pscbundle-logo.png" alt="" loading="lazy"></li>
+          <li><img src="assets/hew-foundation-logo.jpeg" alt="" loading="lazy"></li>
+          <li><img src="assets/watch%20bazaar%20logo.svg" alt="" loading="lazy"></li>
+        </ul>
+        </div></div>
+      </div>
+    </section>
 
-  <!-- ╔══════════════════════════════════════╗ -->
-  <!-- ║             FOOTER                   ║ -->
-  <!-- ╚══════════════════════════════════════╝ -->
+    <!-- Two halves -->
+    <section class="sec" id="about">
+      <div class="container">
+        <div class="sec-grid">
+          <div class="sec-head">
+            <h2>Most teams get one half. You get both.</h2>
+            <p>Security auditors hand you a list of flaws. Developers ship without knowing what an attacker sees. I work on both sides, so nothing gets lost between the report and the patch.</p>
+          </div>
+
+          <div>
+            <div class="halves-tabs" role="group" aria-label="Show Break or Build">
+              <button type="button" data-tab="break" aria-pressed="true">Break</button>
+              <button type="button" data-tab="build" aria-pressed="false">Build</button>
+            </div>
+            <div class="halves" id="halves">
+              <div class="half" data-half="break">
+                <div class="half-main">
+                <h3>Break: security testing</h3>
+                <p>Black, gray and white box assessments written up the way a procurement team expects to read them.</p>
+                <ul>
+                  <li><b>Web and API penetration tests</b> mapped to OWASP WSTG and the API Top 10.</li>
+                  <li><b>Access control and tenant isolation</b>: IDOR/BOLA, role escalation, row-level security.</li>
+                  <li><b>White-label reports</b> with CVSS scores, reproduction steps and fix snippets.</li>
+                  <li><b>GRC work</b>: ISMS reviews and ISO 27001 / NIST alignment.</li>
+                </ul>
+                  <button type="button" class="blind-toggle" aria-expanded="false">What a tester alone leaves you with<span aria-hidden="true"> →</span></button>
+                </div>
+                <div class="blind" aria-hidden="true">
+                  <div class="blind-head">
+                    <span class="caps">The blind spot</span>
+                    <button type="button" class="blind-close" aria-label="Close">Close ✕</button>
+                  </div>
+                  <h4>Hire only a tester and you get a diagnosis, not a cure.</h4>
+                  <ul>
+                    <li><span class="miss">Missed</span><p>A 16-finding PDF, and nobody on your team who can write the row-level security policy that closes the first one.</p></li>
+                    <li><span class="miss">Missed</span><p>Fix advice like &ldquo;enable RLS&rdquo; with no code. A policy that is slightly wrong still leaks, or locks real customers out.</p></li>
+                    <li><span class="miss">Missed</span><p>No retest by someone who knows both the exploit and the patch, so fixes ship unproven.</p></li>
+                  </ul>
+                  <p class="blind-cover">The build half writes the fix and proves it holds.</p>
+                </div>
+                <span class="covers" aria-hidden="true">Covers the fix</span>
+              </div>
+              <div class="half" data-half="build">
+                <div class="half-main">
+                <h3>Build: secure engineering</h3>
+                <p>Production software, not prototypes: stores, clinic platforms, research tools, internal systems and APIs.</p>
+                <ul>
+                  <li><b>Next.js, Node, Postgres and Supabase</b> with the policies written alongside the schema.</li>
+                  <li><b>Security as architecture</b>: tenant isolation, signed URLs, audit logs, prompt-injection guardrails.</li>
+                  <li><b>Delivery</b>: Docker and Caddy on a VPS, CI/CD with rollback, nightly backups with a tested restore.</li>
+                  <li><b>Remediation</b>: I fix the code your last audit flagged, then retest.</li>
+                </ul>
+                  <button type="button" class="blind-toggle" aria-expanded="false">What a developer alone misses<span aria-hidden="true"> →</span></button>
+                </div>
+                <div class="blind" aria-hidden="true">
+                  <div class="blind-head">
+                    <span class="caps">The blind spot</span>
+                    <button type="button" class="blind-close" aria-label="Close">Close ✕</button>
+                  </div>
+                  <h4>Hire only a developer and it works, until someone tests it.</h4>
+                  <ul>
+                    <li><span class="miss">Missed</span><p>The Supabase <code>anon</code> key ships in the JavaScript bundle, so anyone can query the database. Every feature still passes QA.</p></li>
+                    <li><span class="miss">Missed</span><p>Login throttling lives in <code>localStorage</code>. The page behaves; a script walks straight past it.</p></li>
+                    <li><span class="miss">Missed</span><p>The reset code is emailed to whatever address the request says. It works perfectly for honest users.</p></li>
+                  </ul>
+                  <p class="blind-cover">The break half thinks like the attacker who finds these.</p>
+                </div>
+                <span class="covers" aria-hidden="true">Covers the attack</span>
+              </div>
+            </div>
+
+            <div class="bridge">
+              <span class="caps">The point</span>
+              <p>The person who finds the broken access control is the one who writes the policy that closes it, and the one who reruns the exploit to confirm.</p>
+            </div>
+
+            <div class="figures" aria-label="Track record">
+              <div><b>10+</b>enterprise projects</div>
+              <div><b>40+</b>vulnerabilities remediated</div>
+              <div><b>1</b>proprietary AI security tool</div>
+              <div><b>100%</b>delivery rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagements -->
+    <section class="sec" id="engagements">
+      <div class="container">
+        <div class="sec-grid">
+          <div class="sec-head">
+            <h2>Four ways to work together</h2>
+            <p>For development agencies without an in-house security team, and for funded startups that cannot afford to fail an audit or a breach.</p>
+          </div>
+
+          <div>
+            <table class="ledger">
+              <thead>
+                <tr><th scope="col">Engagement</th><th scope="col">What you receive</th><th scope="col">Typically for</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>White-label penetration test<small>Web, API, AI-assisted</small></td>
+                  <td>A report with your branding on it: executive summary, CVSS-scored findings, reproduction steps, remediation snippets. Accelerated by my private agentic AI framework, with a human reviewing every finding.</td>
+                  <td>Agencies passing client vendor assessments</td>
+                </tr>
+                <tr>
+                  <td>Secure product build<small>Web apps, platforms, APIs</small></td>
+                  <td>The whole product, designed with the threat model in mind: authentication, isolation between tenants, RBAC, deployment, backups. Shipped live, not handed over as a prototype.</td>
+                  <td>Startups, incubators, organisations</td>
+                </tr>
+                <tr>
+                  <td>Fix and harden<small>Remediation, code review</small></td>
+                  <td>I take an audit's findings (or my own) into your codebase: patches, architecture changes, a retest to prove they hold.</td>
+                  <td>Teams holding a findings list</td>
+                </tr>
+                <tr>
+                  <td>Fractional DevSecOps and GRC<small>Monthly retainer</small></td>
+                  <td>Code review, monthly vulnerability scans, cloud posture, and guidance toward ISO 27001 / NIST.</td>
+                  <td>Mid-market companies</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case files -->
+    <section class="sec" id="casefiles">
+      <div class="container">
+        <div class="sec-grid">
+          <div class="sec-head">
+            <h2>Case files</h2>
+            <p>Real findings and real builds. Confidential client names are withheld and all details are sanitized.</p>
+            <p style="margin-top: 1.25rem;"><a href="projects.html" class="btn btn-primary">Open all 11 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></p>
+          </div>
+
+          <div>
+            <table class="ledger">
+              <thead>
+                <tr><th scope="col" class="kind">Type</th><th scope="col">Case</th><th scope="col">Outcome</th><th scope="col"><span class="sr-only"></span></th></tr>
+              </thead>
+              <tbody>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag">Test</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case3">The Watch Bazar</a><small>Black-box test, React + Supabase + Django</small></td>
+                  <td>16 findings: 1 critical (credentials in the client bundle), 6 high, 3 medium. Every one came with recreation steps, and I fixed them.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag">Test</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case4">University portal</a><small>Confidential client, gray-box test</small></td>
+                  <td>11 findings: 5 critical, including account takeover through the reset flow and a 2FA that accepted any code.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag">Test</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case1">Securiti.ai</a><small>Enterprise SaaS, web and API</small></td>
+                  <td>20+ findings up to critical: IDOR/BOLA, exploit chains with working proofs of concept.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag build">Build</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case11">HEW Foundation</a><small>Clinic management platform</small></td>
+                  <td>Four branches on one deployment, English and Urdu (RTL), branch-level tenant isolation, audit log on every mutation.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag build">Build</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case10">PSC Bundle</a><small>PlayStation store for Pakistan</small></td>
+                  <td>Live storefront with 30-minute stock holds at checkout, an admin approval console and CI/CD auto-deploy.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag build">Build</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case9">ImpactAlign</a><small>Two sites, one Supabase backend</small></td>
+                  <td>Row-level security protecting confidential research, signed URLs for private PDFs, an AI scoring pipeline with injection guardrails.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+                <tr class="row-link">
+                  <td class="kind"><span class="kindtag">Tool</span></td>
+                  <td><a class="row-a" href="projects.html?tab=case7">Agentic pentest framework</a><small>Multi-agent LLM system</small></td>
+                  <td>Maps attack surface and runs OWASP-based tests autonomously, with human-in-the-loop guardrails.</td>
+                  <td class="go" aria-hidden="true">→</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="ledger-more" href="projects.html">See all 11 case files →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="sec" id="experience">
+      <div class="container">
+        <div class="sec-grid">
+          <div class="sec-head">
+            <h2>Experience</h2>
+            <p>Security roles and shipped builds, in one list because they are one practice. The detail is in each case file.</p>
+          </div>
+
+          <div>
+<div class="xp-row">
+              <div class="xp-when">Oct 2026<br><a href="https://pscbundle.com/" target="_blank" rel="noopener">Live site ↗</a></div>
+              <div class="xp-role"><h3>Full-Stack Developer</h3><span class="org">PSC Bundle</span></div>
+              <div class="xp-meta"><span class="kindtag build">Build</span><a class="xp-link" href="projects.html?tab=case10">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Sep 2026<br><a href="https://app.hewfoundation.org.pk/" target="_blank" rel="noopener">Live site ↗</a></div>
+              <div class="xp-role"><h3>Full-Stack Developer</h3><span class="org">HEW Foundation</span></div>
+              <div class="xp-meta"><span class="kindtag build">Build</span><a class="xp-link" href="projects.html?tab=case11">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Aug 2026<br><a href="https://www.impactalign.org/" target="_blank" rel="noopener">Live site ↗</a></div>
+              <div class="xp-role"><h3>Full-Stack Developer, security focused</h3><span class="org">ImpactAlign and ImpactAlign SDG</span></div>
+              <div class="xp-meta"><span class="kindtag build">Build</span><a class="xp-link" href="projects.html?tab=case9">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Jul 2026 to present</div>
+              <div class="xp-role"><h3>GRC Intern</h3><span class="org">NCERT, National CERT Pakistan</span></div>
+              <div class="xp-meta"><span class="kindtag">GRC</span><a class="xp-link" href="projects.html?tab=case6">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Jun 2026 to present</div>
+              <div class="xp-role"><h3>Application Security Intern</h3><span class="org">Securiti.ai (a Veeam company)</span></div>
+              <div class="xp-meta"><span class="kindtag">Test</span><a class="xp-link" href="projects.html?tab=case1">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Jan 2025 to present</div>
+              <div class="xp-role"><h3>Security Consultant</h3><span class="org">The Watch Bazar</span></div>
+              <div class="xp-meta"><span class="kindtag">Test</span><a class="xp-link" href="projects.html?tab=case3">Case file →</a></div>
+            </div>
+            <div class="xp-row">
+              <div class="xp-when">Jan 2025 to present</div>
+              <div class="xp-role"><h3>Independent Security Consultant</h3><span class="org">Confidential client (EdTech)</span></div>
+              <div class="xp-meta"><span class="kindtag">Test</span><a class="xp-link" href="projects.html?tab=case4">Case file →</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="sec" id="process">
+      <div class="container sec-full">
+        <div class="sec-head">
+          <h2>How an engagement runs</h2>
+          <p>Methodology-driven, with evidence at every step. Testing ends with a report; for build and fix work it continues into the code.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Reconnaissance</h3><div class="step-body"><p>Passive and active recon to map the attack surface: technology fingerprinting, subdomain enumeration, API endpoint discovery, client-side source analysis.</p></div></li>
+          <li class="step"><h3>Vulnerability discovery</h3><div class="step-body"><p>Automated scanning (Burp Suite, ZAP, ffuf) combined with manual testing against OWASP WSTG and the Top 10 across the whole stack.</p></div></li>
+          <li class="step"><h3>Exploitation and proof of concept</h3><div class="step-body"><p>Safe, controlled exploitation with evidence: requests, responses, screenshots and reproducible steps. Nothing destructive.</p></div></li>
+          <li class="step"><h3>Business logic testing</h3><div class="step-body"><p>Payment flows, privilege escalation, authentication bypass and workflow manipulation, the things scanners miss.</p></div></li>
+          <li class="step"><h3>Report and remediate</h3><div class="step-body"><p>Executive summary, CVSS-scored findings, reproduction steps and prioritised fixes. For build and fix engagements I write the patch as well.</p></div></li>
+          <li class="step"><h3>Verify and retest</h3><div class="step-body"><p>I rerun the exploit after the fix to confirm it holds, then stay on for ongoing assurance if you want it.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Toolbox -->
+    <section class="sec" id="toolbox">
+      <div class="container sec-full">
+        <div class="sec-head">
+          <h2>The tools I use</h2>
+          <p>Offensive tooling, the stack I build with, and the standards I test against.</p>
+        </div>
+        <div class="stream" role="group" aria-label="Tools I use">
+          <div class="stream-col up" style="--t:52s">
+            <ul>
+              <li class="tile"><img src="assets/tools/burpsuite.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Burp Suite</b><small>Web proxy and scanner</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">Nm</span><span class="tile-text"><b>Nmap</b><small>Port and service scanning</small></span></li>
+              <li class="tile"><img src="assets/tools/python.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Python</b><small>Tooling and automation</small></span></li>
+              <li class="tile"><img src="assets/tools/docker.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Docker</b><small>Containers</small></span></li>
+              <li class="tile"><img src="assets/tools/wireshark.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Wireshark</b><small>Packet analysis</small></span></li>
+              <li class="tile"><img src="assets/tools/supabase.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Supabase</b><small>Postgres, auth, RLS</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">Sq</span><span class="tile-text"><b>SQLMap</b><small>SQL injection testing</small></span></li>
+              <li class="tile"><img src="assets/tools/nextdotjs.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Next.js</b><small>Full-stack apps</small></span></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile"><img src="assets/tools/burpsuite.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Burp Suite</b><small>Web proxy and scanner</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">Nm</span><span class="tile-text"><b>Nmap</b><small>Port and service scanning</small></span></li>
+              <li class="tile"><img src="assets/tools/python.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Python</b><small>Tooling and automation</small></span></li>
+              <li class="tile"><img src="assets/tools/docker.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Docker</b><small>Containers</small></span></li>
+              <li class="tile"><img src="assets/tools/wireshark.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Wireshark</b><small>Packet analysis</small></span></li>
+              <li class="tile"><img src="assets/tools/supabase.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Supabase</b><small>Postgres, auth, RLS</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">Sq</span><span class="tile-text"><b>SQLMap</b><small>SQL injection testing</small></span></li>
+              <li class="tile"><img src="assets/tools/nextdotjs.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Next.js</b><small>Full-stack apps</small></span></li>
+            </ul>
+          </div>
+          <div class="stream-col down" style="--t:64s">
+            <ul>
+              <li class="tile"><img src="assets/tools/kalilinux.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Kali Linux</b><small>Testing platform</small></span></li>
+              <li class="tile"><img src="assets/tools/postgresql.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>PostgreSQL</b><small>Data and policies</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">ff</span><span class="tile-text"><b>ffuf</b><small>Content discovery</small></span></li>
+              <li class="tile"><img src="assets/tools/react.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>React</b><small>Interfaces</small></span></li>
+              <li class="tile"><img src="assets/tools/metasploit.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Metasploit</b><small>Exploitation framework</small></span></li>
+              <li class="tile"><img src="assets/tools/caddy.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Caddy</b><small>HTTPS and reverse proxy</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">ZAP</span><span class="tile-text"><b>OWASP ZAP</b><small>Web app scanner</small></span></li>
+              <li class="tile"><img src="assets/tools/nodedotjs.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Node.js</b><small>APIs and services</small></span></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile"><img src="assets/tools/kalilinux.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Kali Linux</b><small>Testing platform</small></span></li>
+              <li class="tile"><img src="assets/tools/postgresql.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>PostgreSQL</b><small>Data and policies</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">ff</span><span class="tile-text"><b>ffuf</b><small>Content discovery</small></span></li>
+              <li class="tile"><img src="assets/tools/react.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>React</b><small>Interfaces</small></span></li>
+              <li class="tile"><img src="assets/tools/metasploit.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Metasploit</b><small>Exploitation framework</small></span></li>
+              <li class="tile"><img src="assets/tools/caddy.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Caddy</b><small>HTTPS and reverse proxy</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">ZAP</span><span class="tile-text"><b>OWASP ZAP</b><small>Web app scanner</small></span></li>
+              <li class="tile"><img src="assets/tools/nodedotjs.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Node.js</b><small>APIs and services</small></span></li>
+            </ul>
+          </div>
+          <div class="stream-col up" style="--t:46s">
+            <ul>
+              <li class="tile"><img src="assets/tools/owasp.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>OWASP</b><small>Top 10, WSTG, API Top 10</small></span></li>
+              <li class="tile"><img src="assets/tools/javascript.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>JavaScript</b><small>Front end and tooling</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">AT</span><span class="tile-text"><b>MITRE ATT&amp;CK</b><small>Adversary techniques</small></span></li>
+              <li class="tile"><img src="assets/tools/githubactions.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>GitHub Actions</b><small>CI/CD</small></span></li>
+              <li class="tile"><img src="assets/tools/cplusplus.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>C++</b><small>Systems work</small></span></li>
+              <li class="tile"><img src="assets/tools/anthropic.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Claude</b><small>LLM agents</small></span></li>
+              <li class="tile"><img src="assets/tools/googlegemini.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Gemini</b><small>AI features</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">SQL</span><span class="tile-text"><b>SQL</b><small>Queries and policies</small></span></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile"><img src="assets/tools/owasp.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>OWASP</b><small>Top 10, WSTG, API Top 10</small></span></li>
+              <li class="tile"><img src="assets/tools/javascript.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>JavaScript</b><small>Front end and tooling</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">AT</span><span class="tile-text"><b>MITRE ATT&amp;CK</b><small>Adversary techniques</small></span></li>
+              <li class="tile"><img src="assets/tools/githubactions.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>GitHub Actions</b><small>CI/CD</small></span></li>
+              <li class="tile"><img src="assets/tools/cplusplus.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>C++</b><small>Systems work</small></span></li>
+              <li class="tile"><img src="assets/tools/anthropic.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Claude</b><small>LLM agents</small></span></li>
+              <li class="tile"><img src="assets/tools/googlegemini.svg" alt="" width="32" height="32" loading="lazy"><span class="tile-text"><b>Gemini</b><small>AI features</small></span></li>
+              <li class="tile"><span class="mark" aria-hidden="true">SQL</span><span class="tile-text"><b>SQL</b><small>Queries and policies</small></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I test for -->
+    <section class="sec" id="vulnerabilities">
+      <div class="container sec-full">
+        <div class="sec-head">
+          <h2>What I test for</h2>
+          <p>The vulnerability classes behind the findings in my reports, with their CWE or OWASP reference.</p>
+        </div>
+        <div class="stream" role="group" aria-label="Vulnerability classes I test for">
+          <div class="stream-col up" style="--t:52s">
+            <ul>
+              <li class="tile tile-v"><span class="tile-text"><b>SQL injection</b></span><code>CWE-89</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Broken access control</b></span><code>OWASP A01</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>SSRF</b></span><code>CWE-918</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Hardcoded credentials</b></span><code>CWE-798</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Insecure file upload</b></span><code>CWE-434</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Privilege escalation</b></span><code>CWE-269</code></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile tile-v"><span class="tile-text"><b>SQL injection</b></span><code>CWE-89</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Broken access control</b></span><code>OWASP A01</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>SSRF</b></span><code>CWE-918</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Hardcoded credentials</b></span><code>CWE-798</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Insecure file upload</b></span><code>CWE-434</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Privilege escalation</b></span><code>CWE-269</code></li>
+            </ul>
+          </div>
+          <div class="stream-col down" style="--t:64s">
+            <ul>
+              <li class="tile tile-v"><span class="tile-text"><b>Cross-site scripting</b></span><code>CWE-79</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>IDOR / BOLA</b></span><code>CWE-639</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>2FA bypass</b></span><code>CWE-287</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Information disclosure</b></span><code>CWE-200</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Missing row-level security</b></span><code>CWE-862</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Cleartext transmission</b></span><code>CWE-319</code></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile tile-v"><span class="tile-text"><b>Cross-site scripting</b></span><code>CWE-79</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>IDOR / BOLA</b></span><code>CWE-639</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>2FA bypass</b></span><code>CWE-287</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Information disclosure</b></span><code>CWE-200</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Missing row-level security</b></span><code>CWE-862</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Cleartext transmission</b></span><code>CWE-319</code></li>
+            </ul>
+          </div>
+          <div class="stream-col up" style="--t:46s">
+            <ul>
+              <li class="tile tile-v"><span class="tile-text"><b>CSRF</b></span><code>CWE-352</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>XXE</b></span><code>CWE-611</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Business logic flaws</b></span><code>WSTG-BUSL</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Buffer overflow</b></span><code>CWE-120</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Account takeover via reset</b></span><code>CWE-640</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Rate-limit bypass</b></span><code>CWE-307</code></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li class="tile tile-v"><span class="tile-text"><b>CSRF</b></span><code>CWE-352</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>XXE</b></span><code>CWE-611</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Business logic flaws</b></span><code>WSTG-BUSL</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Buffer overflow</b></span><code>CWE-120</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Account takeover via reset</b></span><code>CWE-640</code></li>
+              <li class="tile tile-v"><span class="tile-text"><b>Rate-limit bypass</b></span><code>CWE-307</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="creds">
+          <div class="cred">
+            <span class="caps">In progress</span>
+            <div><h3>ISC2 Certified in Cybersecurity (CC)</h3><p>Security principles, incident response, network security and access control.</p></div>
+          </div>
+          <div class="cred">
+            <span class="caps">2026</span>
+            <div><h3>Google Cybersecurity Professional Certificate</h3><p>Linux, SQL and Python for security automation; SIEM, IDS and packet analysis. Coursera.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Bring me the app you are worried about.</h2>
+        <p>Whether it is a client project that needs a pentest report, or a product that has to be secure by the time it launches, tell me what you are shipping.</p>
+
+        <div class="contact-actions">
+          <a href="https://calendly.com/shariquebaig/new-meeting" target="_blank" rel="noopener" class="btn btn-primary">
+            Book a partnership call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <span class="contact-group">
+            <button class="contact-copy" id="copyEmail" title="Copy email address" aria-label="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+            <span class="copy-note" id="copyNote" role="status"></span>
+          </span>
+          <a href="https://linkedin.com/in/shariquebaig" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/ShariqueBaig" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="container">
-      <span class="footer-text">© 2026 Sharique Baig. All rights reserved.</span>
-      <span class="footer-tag">&lt;<span>secured</span> by=&quot;design&quot; /&gt;</span>
+      <span>© 2026 Sharique Baig</span>
+      <span>Available for agency partnerships and product builds</span>
     </div>
   </footer>
 
-
-  <!-- Script -->
   <script src="js/script.js"></script>
-
 </body>
 
 </html>
